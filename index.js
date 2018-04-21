@@ -24,7 +24,7 @@ member.guild.channels.find("name", "spam").send(`:ski: ${member.user.username} v
 member.addRole(role)
 })
 bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "spam").send(`:ski: ${member.user.username} vien de partir`)
+    member.guild.channels.find("name", "spam").send(`:thumbsup: ${member.user.username} vien de partir`)
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
