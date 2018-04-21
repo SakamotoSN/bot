@@ -13,22 +13,22 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-    if (message.content === "salut <@431149339683979274>"){
+    if (message.content === "salut <@437179201284603904>"){
     message.reply("Konichiwa :3");
     console.log("une salutation a éter effectuer");
 }
-    if (message.content === "ça va <@431149339683979274>"){
+    if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
         console.log("ça va a eter demander");
 }
-if (message.content === "merci <@431149339683979274>"){
+if (message.content === "merci <@437179201284603904>"){
     message.reply("c'est toujours un plaisir :D");
     console.log("merci :3");
 }
     if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
         message.reply("ERR : TOO MANY LEVEL'S");
         }
-     if (message.content === "<@431149339683979274>" ){ 
+     if (message.content === "<@4437179201284603904>" ){  
 
     const embed = new Discord.RichEmbed()
     .setTitle("info sur Sigbot")
@@ -39,14 +39,14 @@ if (message.content === "merci <@431149339683979274>"){
     .setImage("https://78.media.tumblr.com/9a209d8b2d826c25b70b0fa8e29aeb0f/tumblr_n96mqjeBdg1qmbwk5o1_r2_500.png")
     .setThumbnail("https://puyonexus.com/mediawiki/images/d/d9/Img201007.png")
     .setTimestamp()
-    .setURL("https://discordapp.com/oauth2/authorize?client_id=431149339683979274&scope=bot&permissions=67234880")
+    .setURL("https://discordapp.com/oauth2/authorize?client_id=437179201284603904&scope=bot&permissions=67234880")
     .addField("le bot peu reagir avec 3 maniere ",
       "un texte \n le mentionner \n et utiliser le prefix")
     .addField("prefix du bot", "le prefix du bot est sigbot! mais il est possible qu'il change", false);
   
     message.channel.send({embed});
 }
-if (message.content === "hentai <@431149339683979274>"){
+if (message.content === "hentai <@437179201284603904>"){
     message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
 }
 if (message.content === prefix + "help" ){  
