@@ -20,11 +20,11 @@ bot.on('message', message => {
 }
 bot.on("guildMemberAdd", member => {
     let role = member.guild.role.find("name", "Assassin débutant");
-member.guild.channels.find("name", "spam").send('${member.user.username} vien darriver')
+member.guild.channels.find("name", "spam").send(`${member.user.username} vien darriver`)
 member.addRole(role)
 })
 bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "spam").send('${member.user.username} vien de partir')
+    member.guild.channels.find("name", "spam").send(`${member.user.username} vien de partir`)
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
