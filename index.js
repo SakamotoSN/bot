@@ -13,25 +13,24 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-    
     if (message.content === "salut <@437179201284603904>"){
     message.reply("Konichiwa :3");
     console.log("une salutation a éter effectuer");
 }
 bot.on("guildMemberAdd", member => {
-member.guild.channels.find("name", "inutil").send(` :thumbsup: ${member.user.username} viens obtenir les 10 000 000 000`)
+member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} viens obtenir les 10 000 000 000`)
 member.addRole(role)
+console.log("bonjour")
 })
 bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "inutil").send(`:thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
+    member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
+    console.log("au revoir")
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
-        console.log("ça va a eter demander");
 }
 if (message.content === "merci <@437179201284603904>"){
     message.reply("c'est toujours un plaisir :D");
-    console.log("merci :3");
 }
     if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
         message.reply("ERR : TOO MANY LEVEL'S");
