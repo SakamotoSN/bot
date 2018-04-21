@@ -13,11 +13,20 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+    
     if (message.content === "salut <@437179201284603904>"){
     message.reply("Konichiwa :3");
     console.log("une salutation a éter effectuer");
 }
-    if (message.content === "ça va <@437179201284603904>"){
+bot.on("guildMemberAdd", member => {
+    let role = member.guild.role.find("name", "Assassin débutant");
+member.guild.channels.find("name", "nouveauxelles-élèves").send('${member.user.username} vien darriver')
+member.addRole(role)
+})
+bot.on("guildMemberRemove", member =>{
+    member.guild.channels.find("name", "nouveauxelles-élèves").send('${member.user.username} vien de partir')
+})
+if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
         console.log("ça va a eter demander");
 }
