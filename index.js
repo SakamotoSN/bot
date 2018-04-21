@@ -19,7 +19,7 @@ bot.on('message', message => {
     console.log("une salutation a éter effectuer");
 }
 bot.on("guildMemberAdd", member => {
-    let role = member.guild.roles.find("name", "Assassin débutant");
+    let role = member.guild.roles.find("name", "test");
 member.guild.channels.find("name", "spam").send(`:ski: ${member.user.username} vien darriver`)
 member.addRole(role)
 })
