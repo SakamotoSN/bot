@@ -19,7 +19,7 @@ bot.on('message', message => {
     console.log("une salutation a éter effectuer");
 }
 bot.on("guildMemberAdd", member => {
-member.guild.channels.find("name", "inutil").send(`${member.user.username} viens obtenir les 10 000 000 000`)
+member.guild.channels.find("name", "inutil").send(` :thumbsup: ${member.user.username} viens obtenir les 10 000 000 000`)
 member.addRole(role)
 })
 bot.on("guildMemberRemove", member =>{
