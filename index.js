@@ -18,10 +18,10 @@ bot.on('message', message => {
     console.log("une salutation a éter effectuer");
 }
 client.on("guildMemberAdd", member => {
-member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} viens obtenir les 10 000 000 000`)
+member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} test`)
 })
 client.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
+    member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} test 2`)
 
 })
 if (message.content === "ça va <@437179201284603904>"){
