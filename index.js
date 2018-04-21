@@ -17,14 +17,12 @@ bot.on('message', message => {
     message.reply("Konichiwa :3");
     console.log("une salutation a éter effectuer");
 }
-bot.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
 member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} viens obtenir les 10 000 000 000`)
-member.addRole(role)
-console.log("bonjour")
 })
-bot.on("guildMemberRemove", member =>{
+client.on("guildMemberRemove", member =>{
     member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
-    console.log("au revoir")
+
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
