@@ -20,11 +20,11 @@ bot.on('message', message => {
 }
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "test");
-member.guild.channels.find("name", "nouveauxelles-élèves").send(`${member.user.username} viens obtenir les 10 000 000 000`)
+member.guild.channels.find("name", "inutil").send(`${member.user.username} viens obtenir les 10 000 000 000`)
 member.addRole(role)
 })
 bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "nouveauxelles-élèves").send(`:thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
+    member.guild.channels.find("name", "inutil").send(`:thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
