@@ -20,11 +20,11 @@ bot.on('message', message => {
 }
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "test");
-member.guild.channels.find("name", "spam").send(`:ski: ${member.user.username} vien darriver`)
+member.guild.channels.find("name", "nouveauxelles-élèves").send(`${member.user.username} viens obtenir les 10 000 000 000`)
 member.addRole(role)
 })
 bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "spam").send(`:thumbsup: ${member.user.username} vien de partir`)
+    member.guild.channels.find("name", "nouveauxelles-élèves").send(`:thumbsup: ${member.user.username} vien de lancer une commande pas encore finis`)
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
@@ -48,7 +48,7 @@ if (message.content === "merci <@437179201284603904>"){
     .setImage("https://78.media.tumblr.com/9a209d8b2d826c25b70b0fa8e29aeb0f/tumblr_n96mqjeBdg1qmbwk5o1_r2_500.png")
     .setThumbnail("https://puyonexus.com/mediawiki/images/d/d9/Img201007.png")
     .setTimestamp()
-    .setURL("https://discordapp.com/oauth2/authorize?client_id=437179201284603904&scope=bot&permissions=67234880")
+    .setURL("https://discordapp.com/api/oauth2/authorize?client_id=437179201284603904&permissions=2146958583&scope=bot")
     .addField("le bot peu reagir avec 3 maniere ",
       "un texte \n le mentionner \n et utiliser le prefix")
     .addField("prefix du bot", "le prefix du bot est sigbot! mais il est possible qu'il change", false);
