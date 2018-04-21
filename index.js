@@ -9,7 +9,7 @@ bot.on('ready', function() {
     console.log("Connected")
 });
 
-bot.login("lUEZWhVRtjLMW_dTJb6pVwkzRWE_Q0vh");
+bot.login(process.enTOKEN);
 
 
 bot.on('message', message => {
@@ -28,7 +28,7 @@ if (message.content === "merci <@431149339683979274>"){
     if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
         message.reply("ERR : TOO MANY LEVEL'S");
         }
-     if (message.content === "<@431149339683979274>" ){  
+     if (message.content === "<@431149339683979274>" ){ 
 
     const embed = new Discord.RichEmbed()
     .setTitle("info sur Sigbot")
