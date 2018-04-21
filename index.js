@@ -19,8 +19,8 @@ bot.on('message', message => {
 }
 client.on("guildMemberAdd", member => {
 member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} test`)
-})
-client.on("guildMemberRemove", member =>{
+});
+client.on("guildMemberAdd", member => {
     member.guild.channels.find("name", "nouveauxelles-élèves").send(` :thumbsup: ${member.user.username} test 2`)
 
 })
