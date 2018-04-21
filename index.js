@@ -28,7 +28,7 @@ if (message.content === "merci <@437179201284603904>"){
     if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
         message.reply("ERR : TOO MANY LEVEL'S");
         }
-     if (message.content === "<@4437179201284603904>" ){  
+     if (message.content === "<@437179201284603904>" ){  
 
     const embed = new Discord.RichEmbed()
     .setTitle("info sur Sigbot")
