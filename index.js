@@ -19,12 +19,12 @@ bot.on('message', message => {
     console.log("une salutation a éter effectuer");
 }
 bot.on("guildMemberAdd", member => {
-    let role = member.guild.role.find("name", "Assassin débutant");
-member.guild.channels.find("name", "spam").send(`${member.user.username} vien darriver`)
+    let role = member.guild.roles.find("name", "Assassin débutant");
+member.guild.channels.find("name", "spam").send(`:ski: ${member.user.username} vien darriver`)
 member.addRole(role)
 })
 bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name", "spam").send(`${member.user.username} vien de partir`)
+    member.guild.channels.find("name", "spam").send(`:ski: ${member.user.username} vien de partir`)
 })
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
