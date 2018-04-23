@@ -17,13 +17,6 @@ bot.on('message', message => {
     message.reply("Konichiwa :3");
     console.log("une salutation a éter effectuer");
 }
-client.on("guildMemberAdd", member => {
-member.guild.channels.find("name", "spam").send(` :thumbsup: ${member.user.username} test`)
-});
-client.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "spam").send(` :thumbsup: ${member.user.username} test 2`)
-
-})
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
 }
