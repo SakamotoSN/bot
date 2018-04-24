@@ -33,7 +33,7 @@ if (message.content === "merci <@437179201284603904>"){
     .setAuthor("Sig", "https://puyonexus.com/forum/download/file.php?avatar=1481_1311799010.png")
     .setColor(0x0086AE)
     .setDescription("le bot a éter crée juste pour faire de la programation , mais est partie bien plus loin que sa, il a été crée par @Sig qui c'est fais aidez par  @̶̶ۣۣۜۜ͜ζ͜͡▪) ρнคгยxтαภ  pour les petite erreur :D")
-    .setFooter("pour plus d'info demander a Sig :3", "https://orig00.deviantart.net/24f3/f/2015/305/4/e/sig_as_amitie__by_grimtales1lizzybird-d9f6ez9.png")
+    .setFooter("pour plus d'info demander au créateur du bot :3", "https://orig00.deviantart.net/24f3/f/2015/305/4/e/sig_as_amitie__by_grimtales1lizzybird-d9f6ez9.png")
     .setImage("https://78.media.tumblr.com/9a209d8b2d826c25b70b0fa8e29aeb0f/tumblr_n96mqjeBdg1qmbwk5o1_r2_500.png")
     .setThumbnail("https://puyonexus.com/mediawiki/images/d/d9/Img201007.png")
     .setTimestamp()
@@ -53,7 +53,7 @@ if (message.content === prefix + "help" ){
     .setTitle("commande pour le Sigbot")
     .setColor(0x0086AE)
     .setDescription("voici les commande que le bot peu faire :D")
-    .setFooter("pour plus d'info demander a Sig :3")
+    .setFooter("pour plus d'info demander a son créateur :3")
     .addField("commande qui devais etre drole",
       "lui dire salut (avec une mention a la fin) \n lui demander si ça va (avec une mention a la fin) \n lui dire merci (avec une mention a la fin) \n utiliser le konnami code \n lui dire hentai (avec une mention a la fin)")
       .addField("commande special",
