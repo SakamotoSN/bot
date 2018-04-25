@@ -101,10 +101,12 @@ if (message.content === "xarrin!nickel"){ //Xarrin
         file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
     });  
 }
-if (message.content === "xarrin!Invocation:Byakko"){ //Xarrin
-    message.channel.send("", {
-        file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png"
-    });
+if(message.content === "Xarrin!Invocation:Byakko"){
+    if("320537317423185925".includes(message.author.id)){
+        file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png";
+    } else {
+        message.channel.send("YOU SHALD NOT PASS");
+    }
 }
 if (message.content === "xarrin!voyeur"){ //Xarrin
     message.channel.send("", {
