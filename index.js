@@ -174,5 +174,41 @@ if(message.content === "Xarrin!help"){ //Xarrin
     else {
     message.channel.send("YOU SHALD NOT PASS")
     }
+if(message.content === "Lucas!KC"){ //MME POOF
+    if("293423253949775872".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://31.media.tumblr.com/b4bb500c7d05b0f44e0fd4c35020e3eb/tumblr_inline_ofauryqfpQ1s9x8us_500.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "Lucas!FTW"){ //MME POOF
+    if("293423253949775872".includes(message.author.id))
+        message.channel.send("Ma réponce :", {
+        file: "https://i.skyrock.net/0358/84470358/pics/3103693573_1_17_ENJacXlx.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "Lucas!MrPuel"){ //MME POOF
+    if("293423253949775872".includes(message.author.id))
+        message.channel.send("¡Hola!", {
+        file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "yuki!invocation:Godness"){ //yuki
+    if("418453389576503297".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://cdn.discordapp.com/attachments/434681503964725248/435078318610710539/Goddess.png"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
 }
 )
