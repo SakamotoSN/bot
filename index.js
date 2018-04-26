@@ -243,7 +243,7 @@ if(message.content === "magie!eau"){ //magie
     file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
 }) 
 }
-if(message.content === "Lucas!feu"){ //magie
+if(message.content === "magie!feu"){ //magie
     message.channel.send("", {
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 }) 
