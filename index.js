@@ -234,18 +234,18 @@ if(message.content === "magie!help"){ //magie
     message.channel.send({embed});
 }
 if(message.content === "Lucas!MrPuel"){ //magie
-    message.channel.send("¡Hola!", {
-    file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+    message.channel.send("magie!nature", {
+    file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
 })
 }
-if(message.content === "Lucas!MrPuel"){ //magie
-    message.channel.send("¡Hola!", {
-    file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+if(message.content === "magie!eau"){ //magie
+    message.channel.send("magie!eau", {
+    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
 }) 
 }
-if(message.content === "Lucas!MrPuel"){ //magie
-    message.channel.send("¡Hola!", {
-    file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+if(message.content === "Lucas!feu"){ //magie
+    message.channel.send("", {
+    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 }) 
 }
 }
