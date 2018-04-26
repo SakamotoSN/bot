@@ -13,6 +13,19 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+    if (message.content === "salut <@437179201284603904>"){
+    message.reply("Konichiwa :3");
+    console.log("une salutation a éter effectuer");
+}
+if (message.content === "ça va <@437179201284603904>"){
+        message.reply("JUST MONIKA");
+}
+if (message.content === "merci <@437179201284603904>"){
+    message.reply("c'est toujours un plaisir :D");
+}
+    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
+        message.reply("ERR : TOO MANY LEVEL'S");
+        }
 
      if (message.content === "<@437179201284603904>" ){  
 
@@ -49,6 +62,10 @@ if (message.content === prefix + "help" ){
   
     message.channel.send({embed});
 }
+if (message.content === "sigbot!gif"){
+    message.channel.send("on ce met au image et au gig maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
+        file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
+    });  
 if(message.content === "mp!help"){ //MME POOF HELP
     if("293423253949775872".includes(message.author.id))
     
@@ -113,24 +130,6 @@ if(message.content === "yuki!help"){ //koro help
     
         message.channel.send({embed});
 }
-if (message.content === "sigbot!gif"){
-    message.channel.send("on ce met au image et au gig maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
-        file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
-    });  
-
-if (message.content === "salut <@437179201284603904>"){
-    message.reply("Konichiwa :3");
-    console.log("une salutation a éter effectuer");
-}
-if (message.content === "ça va <@437179201284603904>"){
-        message.reply("JUST MONIKA");
-}
-if (message.content === "merci <@437179201284603904>"){
-    message.reply("c'est toujours un plaisir :D");
-}
-    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
-        message.reply("ERR : TOO MANY LEVEL'S");
-        }
 }
 }
 )
