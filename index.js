@@ -226,9 +226,6 @@ if(message.content === "mp!help"){ //MME POOF HELP
 
     message.channel.send({embed});
     } 
-    else {
-    message.channel.send("YOU SHALD NOT PASS")
-    }
 if(message.content === "yuki!help"){ //yuki help
     if("418453389576503297".includes(message.author.id))
 
@@ -244,9 +241,6 @@ if(message.content === "yuki!help"){ //yuki help
       "yuki!invocation:Godness")
 
     message.channel.send({embed});
-    } 
-    else {
-    message.channel.send("nop")
     }
 if(message.content === "yuki!help"){ //koro help
     if("382227962751221762".includes(message.author.id))
@@ -263,9 +257,6 @@ if(message.content === "yuki!help"){ //koro help
       "aucun")
 
     message.channel.send({embed});
-    } 
-    else {
-    message.channel.send("YOU SHALD NOT PASS")
     }
     if(message.content === "sig!help"){ //sig help
         if("234368202379886593".includes(message.author.id))
@@ -282,9 +273,6 @@ if(message.content === "yuki!help"){ //koro help
           "aucun")
     
         message.channel.send({embed});
-        } 
-        else {
-        message.channel.send("nop")
         }
 if(message.content === "Xarrin!gral"){ //xarin
     if("320537317423185925".includes(message.author.id))
