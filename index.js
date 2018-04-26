@@ -143,5 +143,78 @@ if(message.content === "Lucas!FTW"){ //MME POOF
         file: "https://i.skyrock.net/0358/84470358/pics/3103693573_1_17_ENJacXlx.gif"
     }) 
 }
+if(message.content === "Lucas!MrPuel"){ //MME POOF
+        message.channel.send("¡Hola!", {
+        file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+    }) 
+}
+if(message.content === "yuki!invocation:Godness"){ //yuki
+        message.channel.send("", {
+        file: "https://cdn.discordapp.com/attachments/434681503964725248/435078318610710539/Goddess.png"
+    }) 
+}
+if(message.content === "Xarrin!gral"){ //xarin
+    message.channel.send("La solitude c'est quand karma il vas sur mer\nLa solitude c'est quand il est bourré dans un verre\n-----\nIl répond au nom de karma On dirais pas forcément mais il en a du karma\nNous on en peut plus de son karma\n-----\n La solitude c'est quand Lucas se prend un vent\nLa solitude c'est au moment ou il se prend du blanc\n-----\n Il répond au nom de lucas\nnon il ne mange pas encore de caca\nCar il était caché dans un placard\n -----\n La solitude c'est quand Xarrin  il mange son pain\nLa solitude c'est comme son fil il est tout fin\n-----\nil répond au nom de Xarrin\nXarrin, il aime allé touché des sein\nXarrin, il aime allé boire du Vin en touchant des popotins");
+}
+if(message.content === "mp!help"){ //MME POOF HELP
+
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Madame Pouf posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/432275341202030614/435096117504638986/unknown.png")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Lucas!KC\nLucas!FTW\Lucas!MrPuel\nLucas!MrPuel")
+      .addField("image",
+      "rien") 
+
+    message.channel.send({embed});
+}
+if(message.content === "yuki!help"){ //yuki help
+
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Yuki posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435083973069373441/ange_manga_n1.jpg")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "rien")
+    .addField("image",
+      "yuki!invocation:Godness")
+
+    message.channel.send({embed});
+}
+if(message.content === "yuki!help"){ //koro help
+
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que koro posséde")
+    .setThumbnail("https://media.giphy.com/media/133FgIVnM1g70k/giphy.gif")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Koro!travaille")
+      .addField("image",
+      "aucun")
+
+    message.channel.send({embed});
+}
+if(message.content === "sig!help"){ //sig help
+
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que sig posséde")
+    .setThumbnail("https://image.gamer.ne.jp/news/2011/20110727/00018cb052ae8768e94585c1314982a7a0cc/o/17.jpg")
+    .setFooter("pour plus d'info va te voir vue que c'est toi qui la crée xD")
+    .addField("gif",
+      "sig!win \nsig!lose\nsig!magic 1\nsig!magic 2\nsig!magic 3\n sig!magic 4")
+      .addField("image",
+      "aucun")
+
+    message.channel.send({embed});
+}
 }
 )
