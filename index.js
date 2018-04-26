@@ -132,9 +132,9 @@ if(message.content === "Xarrin!help"){ //Xarrin
     .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
     .setFooter("pour plus d'info demander a sig :D")
     .addField("gif",
-      "Xarrin!nickel\nXarrin!voyeur\nXarrin!Invocation:Phoenix")
+      "Xarrin!nickel\nXarrin!voyeur")
       .addField("image",
-      "Xarrin!Invocation:Byakko")
+      "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix")
 
     message.channel.send({embed});
 }
