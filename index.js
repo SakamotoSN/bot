@@ -234,19 +234,19 @@ if(message.content === "magie!help"){ //magie
     message.channel.send({embed});
 }
 if(message.content === "magie!nature"){ //magie
-    message.channel.send("**${member.user.username}** lance une ataque magique naturel", {
+    message.channel.send(`**${member.user.username}** lance une ataque magique naturel`, {
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
 })
 }
 if(message.content === "magie!eau"){ //magie
-    message.channel.send("**${member.user.username}** lance une ataque magique d'eau", {
+    message.channel.send(`**${member.user.username}** lance une ataque magique d'eau`, {
     file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
 }) 
 }
 if(message.content === "magie!feu"){ //magie
-    message.channel.send(`${message.author.username} "lance une ataque magique de feu"`); {
+    message.channel.send(`**${message.author.username}** lance une ataque magique de feu`,{
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
-}
+})
 }
 if(message.content === "Xarrin!invocation:spiritwater"){ //xarrin
     message.channel.send("", {
