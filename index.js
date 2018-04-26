@@ -123,7 +123,7 @@ if(message.content === "Xarrin!Invocation:Phoenix"){ //Xarrin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439059526575063040/m035c10.png"
 })
 }
-if(message.content === "Xarrin!help"){ //Xarrin
+if(message.content === "Xarrin!help"){ //Xarrin help
  
     const embed = new Discord.RichEmbed()
     .setTitle("commande pour les gif")
@@ -134,7 +134,7 @@ if(message.content === "Xarrin!help"){ //Xarrin
     .addField("gif",
       "Xarrin!nickel\nXarrin!voyeur")
       .addField("image",
-      "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix")
+      "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix\nXarrin!invocation:spiritwater\nXarrin!invocation:spiritearth\nXarrin!invocation:spiritwind\nXarrin!invocation:spiritfire")
 
     message.channel.send({embed});
 }
@@ -248,5 +248,27 @@ if(message.content === "magie!feu"){ //magie
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 }) 
 }
+if(message.content === "Xarrin!invocation:spiritwater"){ //xarrin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071187570655232/elemental_01.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:spiritearth"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071278964408330/elemental_02.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:spiritwind"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071361919352842/elemental_03.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:spiritfire"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071422992744448/elemental_04.png"
+}) 
+}
 }
 )
+
+
