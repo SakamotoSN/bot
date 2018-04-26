@@ -118,6 +118,11 @@ if(message.content === "xarrin!voyeur"){ //Xarrin
         file: "https://i.pinimg.com/originals/07/d3/ac/07d3ac2dcfc4597b4d0da463fa8b0003.gif"
     }) 
 }
+if(message.content === "xarrin!Invocation:Phoenix"){ //Xarrin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439059526575063040/m035c10.png"
+})
+}
 if(message.content === "Xarrin!help"){ //Xarrin
  
     const embed = new Discord.RichEmbed()
@@ -127,7 +132,7 @@ if(message.content === "Xarrin!help"){ //Xarrin
     .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
     .setFooter("pour plus d'info demander a sig :D")
     .addField("gif",
-      "Xarrin!nickel\nXarrin!voyeur")
+      "Xarrin!nickel\nXarrin!voyeur\nXarrin!Invocation:Phoenix")
       .addField("image",
       "Xarrin!Invocation:Byakko")
 
