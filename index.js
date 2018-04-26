@@ -77,5 +77,71 @@ if(message.content === "sig!win"){ //sig
         file: "https://78.media.tumblr.com/5168cc03977978b9e03ebb97b99e1451/tumblr_ofipwwheNI1rypw9yo5_400.gif"
         })
 }
+if(message.content === "sig!magic 1"){ //sig
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
+
+    })
+}
+if(message.content === "sig!magic 1"){ //sig
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
+    }) 
+}
+if(message.content === "sig!magic 2"){ //sig
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/a0f76ff3f9cfd7df6a836dbf4815cc71/tumblr_ofipwwheNI1rypw9yo2_1280.gif"
+    })
+}
+if(message.content === "sig!magic 3"){ //sig
+        message.channel.send("", {
+        file: "http://78.media.tumblr.com/fbe10ec5eeed5eb4d6b73183aa08b59c/tumblr_ofipwwheNI1rypw9yo4_1280.gif"
+    })
+}
+if(message.content === "sig!magic 4"){ //sig
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/e73d1acb290c292c6655d6fde48548cd/tumblr_ofipwwheNI1rypw9yo3_1280.gif"
+    }) 
+}
+if(message.content === "Xarrin!nickel"){ //Xarrin
+        message.channel.send("", {
+        file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
+    }) 
+}
+if(message.content === "Xarrin!Invocation:Byakko"){ //Xarrin
+        message.channel.send("", {
+        file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png"
+    }) 
+}
+if(message.content === "xarrin!voyeur"){ //Xarrin
+        message.channel.send("", {
+        file: "https://i.pinimg.com/originals/07/d3/ac/07d3ac2dcfc4597b4d0da463fa8b0003.gif"
+    }) 
+}
+if(message.content === "Xarrin!help"){ //Xarrin
+ 
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Xarrin posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Xarrin!nickel\nXarrin!voyeur")
+      .addField("image",
+      "Xarrin!Invocation:Byakko")
+
+    message.channel.send({embed});
+}
+if(message.content === "Lucas!KC"){ //MME POOF
+        message.channel.send("", {
+        file: "https://31.media.tumblr.com/b4bb500c7d05b0f44e0fd4c35020e3eb/tumblr_inline_ofauryqfpQ1s9x8us_500.gif"
+    }) 
+}
+if(message.content === "Lucas!FTW"){ //MME POOF
+        message.channel.send("Ma réponce :", {
+        file: "https://i.skyrock.net/0358/84470358/pics/3103693573_1_17_ENJacXlx.gif"
+    }) 
+}
 }
 )
