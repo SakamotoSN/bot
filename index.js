@@ -113,12 +113,12 @@ if(message.content === "Xarrin!Invocation:Byakko"){ //Xarrin
         file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png"
     }) 
 }
-if(message.content === "xarrin!voyeur"){ //Xarrin
+if(message.content === "Xarrin!voyeur"){ //Xarrin
         message.channel.send("", {
         file: "https://i.pinimg.com/originals/07/d3/ac/07d3ac2dcfc4597b4d0da463fa8b0003.gif"
     }) 
 }
-if(message.content === "xarrin!Invocation:Phoenix"){ //Xarrin
+if(message.content === "Xarrin!Invocation:Phoenix"){ //Xarrin
     message.channel.send("", {
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439059526575063040/m035c10.png"
 })
@@ -221,5 +221,18 @@ if(message.content === "sig!help"){ //sig help
 
     message.channel.send({embed});
 }
+if(message.content === "magie!help"){ //magie
+ 
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande magique")
+    .setColor(0x0086AE)
+    .setDescription("table des éléments de magie")
+    .addField("",
+      "magie!nature\nmagie!eau\nmagie!feu")
+
+
+    message.channel.send({embed});
+}
+
 }
 )
