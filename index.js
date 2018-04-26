@@ -244,7 +244,7 @@ if(message.content === "magie!eau"){ //magie
 }) 
 }
 if(message.content === "magie!feu"){ //magie
-    message.username.send("lance une ataque magique de feu", {
+    message.author.send((message.author.username),"lance une ataque magique de feu", {
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 }) 
 }
