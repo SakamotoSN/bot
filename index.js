@@ -186,7 +186,22 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
 }) 
 if(message.content === "mp!help"){ //MME POOF HELP
-
+}
+if(message.content === "magie!nature"){ //magie
+    message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
+    file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
+})
+}
+if(message.content === "magie!eau"){ //magie
+    message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
+    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
+}) 
+}
+if(message.content === "magie!feu"){ //magie
+    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
+    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
+})
+}
     const embed = new Discord.RichEmbed()
     .setTitle("commande pour les gif")
     .setColor(0x0086AE)
@@ -245,21 +260,7 @@ if(message.content === "sig!help"){ //sig help
 
     message.channel.send({embed});
 }
-if(message.content === "magie!nature"){ //magie
-    message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
-    file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
-})
-}
-if(message.content === "magie!eau"){ //magie
-    message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
-    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
-}) 
-}
-if(message.content === "magie!feu"){ //magie
-    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
-    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
-})
-}
+
 if(message.content === "magie!help"){ //magie
  
     const embed = new Discord.RichEmbed()
@@ -271,7 +272,6 @@ if(message.content === "magie!help"){ //magie
 
 
     message.channel.send({embed});
-}
 }
 }
 )
