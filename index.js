@@ -161,6 +161,30 @@ if(message.content === "yuki!invocation:Godness"){ //yuki
 if(message.content === "Xarrin!gral"){ //xarin
     message.channel.send("La solitude c'est quand karma il vas sur mer\nLa solitude c'est quand il est bourré dans un verre\n-----\nIl répond au nom de karma On dirais pas forcément mais il en a du karma\nNous on en peut plus de son karma\n-----\n La solitude c'est quand Lucas se prend un vent\nLa solitude c'est au moment ou il se prend du blanc\n-----\n Il répond au nom de lucas\nnon il ne mange pas encore de caca\nCar il était caché dans un placard\n -----\n La solitude c'est quand Xarrin  il mange son pain\nLa solitude c'est comme son fil il est tout fin\n-----\nil répond au nom de Xarrin\nXarrin, il aime allé touché des sein\nXarrin, il aime allé boire du Vin en touchant des popotins");
 }
+if(message.content === "Xarrin!invocation:spiritwater"){ //xarrin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071187570655232/elemental_01.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:spiritearth"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071278964408330/elemental_02.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:spiritwind"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071361919352842/elemental_03.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:spiritfire"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071422992744448/elemental_04.png"
+}) 
+}
+if(message.content === "Xarrin!invocation:Kuro"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
+}) 
 if(message.content === "mp!help"){ //MME POOF HELP
 
     const embed = new Discord.RichEmbed()
@@ -221,18 +245,6 @@ if(message.content === "sig!help"){ //sig help
 
     message.channel.send({embed});
 }
-if(message.content === "magie!help"){ //magie
- 
-    const embed = new Discord.RichEmbed()
-    .setTitle("commande magique")
-    .setColor(0x0086AE)
-    .setDescription("table des éléments de magie")
-    .addField("magie utilisable",
-      "magie!nature\nmagie!eau\nmagie!feu")
-
-
-    message.channel.send({embed});
-}
 if(message.content === "magie!nature"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
@@ -248,30 +260,18 @@ if(message.content === "magie!feu"){ //magie
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 })
 }
-if(message.content === "Xarrin!invocation:spiritwater"){ //xarrin
-    message.channel.send("", {
-    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071187570655232/elemental_01.png"
-}) 
+if(message.content === "magie!help"){ //magie
+ 
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande magique")
+    .setColor(0x0086AE)
+    .setDescription("table des éléments de magie")
+    .addField("magie utilisable",
+      "magie!nature\nmagie!eau\nmagie!feu")
+
+
+    message.channel.send({embed});
 }
-if(message.content === "Xarrin!invocation:spiritearth"){ //xarin
-    message.channel.send("", {
-    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071278964408330/elemental_02.png"
-}) 
-}
-if(message.content === "Xarrin!invocation:spiritwind"){ //xarin
-    message.channel.send("", {
-    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071361919352842/elemental_03.png"
-}) 
-}
-if(message.content === "Xarrin!invocation:spiritfire"){ //xarin
-    message.channel.send("", {
-    file: "https://cdn.discordapp.com/attachments/434681503964725248/439071422992744448/elemental_04.png"
-}) 
-}
-if(message.content === "Xarrin!invocation:Kuro"){ //xarin
-    message.channel.send("", {
-    file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
-}) 
 }
 }
 )
