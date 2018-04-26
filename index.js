@@ -66,13 +66,68 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
-if(message.content === "Xarrin!Invocation:Byakko"){
-    if("320537317423185925 234368202379886593".includes(message.author.id))
+if(message.content === "sig!lose"){ //sig
+    if("234368202379886593".includes(message.author.id))
         message.channel.send("", {
-        file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png"
+        file: "https://78.media.tumblr.com/2b4deb2d385487b34f272ba15916b521/tumblr_ofipwwheNI1rypw9yo6_400.gif"
     }) 
     else {
     message.channel.send("YOU SHALD NOT PASS")
-    }}
+    }
+}
+if(message.content === "sig!win"){ //sig
+    if("234368202379886593".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/5168cc03977978b9e03ebb97b99e1451/tumblr_ofipwwheNI1rypw9yo5_400.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "sig!magic 1"){ //sig
+    if("234368202379886593".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "sig!magic 1"){ //sig
+    if("234368202379886593".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "sig!magic 2"){ //sig
+    if("234368202379886593".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/a0f76ff3f9cfd7df6a836dbf4815cc71/tumblr_ofipwwheNI1rypw9yo2_1280.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "sig!magic 3"){ //sig
+    if("234368202379886593".includes(message.author.id))
+        message.channel.send("", {
+        file: "http://78.media.tumblr.com/fbe10ec5eeed5eb4d6b73183aa08b59c/tumblr_ofipwwheNI1rypw9yo4_1280.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "sig!magic 4"){ //sig
+    if("234368202379886593".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/e73d1acb290c292c6655d6fde48548cd/tumblr_ofipwwheNI1rypw9yo3_1280.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
 }
 )
