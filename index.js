@@ -129,5 +129,50 @@ if(message.content === "sig!magic 4"){ //sig
     message.channel.send("YOU SHALD NOT PASS")
     }
 }
+if(message.content === "Xarrin!nickel"){ //Xarrin
+    if("320537317423185925".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "Xarrin!Invocation:Byakko"){ //Xarrin
+    if("320537317423185925".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "xarrin!voyeur"){ //Xarrin
+    if("320537317423185925".includes(message.author.id))
+        message.channel.send("", {
+        file: "https://i.pinimg.com/originals/07/d3/ac/07d3ac2dcfc4597b4d0da463fa8b0003.gif"
+    }) 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
+}
+if(message.content === "Xarrin!help"){ //Xarrin
+    if("320537317423185925".includes(message.author.id))
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Xarrin posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Xarrin!nickel\nXarrin!voyeur")
+      .addField("image",
+      "Xarrin!Invocation:Byakko")
+
+    message.channel.send({embed});
+} 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
 }
 )
