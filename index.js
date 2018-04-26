@@ -268,5 +268,10 @@ if(message.content === "Xarrin!invocation:spiritfire"){ //xarin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439071422992744448/elemental_04.png"
 }) 
 }
+if(message.content === "Xarrin!invocation:Kuro"){ //xarin
+    message.channel.send("", {
+    file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
+}) 
+}
 }
 )
