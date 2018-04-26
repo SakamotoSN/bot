@@ -227,12 +227,26 @@ if(message.content === "magie!help"){ //magie
     .setTitle("commande magique")
     .setColor(0x0086AE)
     .setDescription("table des éléments de magie")
-    .addField("",
+    .addField("magie utilisable",
       "magie!nature\nmagie!eau\nmagie!feu")
 
 
     message.channel.send({embed});
 }
-
+if(message.content === "Lucas!MrPuel"){ //magie
+    message.channel.send("¡Hola!", {
+    file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+})
+}
+if(message.content === "Lucas!MrPuel"){ //magie
+    message.channel.send("¡Hola!", {
+    file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+}) 
+}
+if(message.content === "Lucas!MrPuel"){ //magie
+    message.channel.send("¡Hola!", {
+    file: "https://thumbs.gfycat.com/DentalHealthyAcornweevil-max-1mb.gif"
+}) 
+}
 }
 )
