@@ -171,8 +171,6 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     message.channel.send("", {
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
 }) 
-if(message.content === "mp!help"){ //MME POOF HELP
-}
 if(message.content === "magie!nature"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
@@ -188,6 +186,8 @@ if(message.content === "magie!feu"){ //magie
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 })
 }
+if(message.content === "mp!help"){ //MME POOF HELP
+
     const embed = new Discord.RichEmbed()
     .setTitle("commande pour les gif")
     .setColor(0x0086AE)
@@ -272,6 +272,7 @@ if(message.content === "Xarrin!help"){ //Xarrin help
       "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix\nXarrin!invocation:spiritwater\nXarrin!invocation:spiritearth\nXarrin!invocation:spiritwind\nXarrin!invocation:spiritfire")
 
     message.channel.send({embed});
+}
 }
 }
 )
