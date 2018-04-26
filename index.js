@@ -123,21 +123,7 @@ if(message.content === "Xarrin!Invocation:Phoenix"){ //Xarrin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439059526575063040/m035c10.png"
 })
 }
-if(message.content === "Xarrin!help"){ //Xarrin help
- 
-    const embed = new Discord.RichEmbed()
-    .setTitle("commande pour les gif")
-    .setColor(0x0086AE)
-    .setDescription("voila les gif et image que Xarrin posséde")
-    .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
-    .setFooter("pour plus d'info demander a sig :D")
-    .addField("gif",
-      "Xarrin!nickel\nXarrin!voyeur")
-      .addField("image",
-      "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix\nXarrin!invocation:spiritwater\nXarrin!invocation:spiritearth\nXarrin!invocation:spiritwind\nXarrin!invocation:spiritfire")
 
-    message.channel.send({embed});
-}
 if(message.content === "Lucas!KC"){ //MME POOF
         message.channel.send("", {
         file: "https://31.media.tumblr.com/b4bb500c7d05b0f44e0fd4c35020e3eb/tumblr_inline_ofauryqfpQ1s9x8us_500.gif"
@@ -230,7 +216,7 @@ if(message.content === "yuki!help"){ //yuki help
 
     message.channel.send({embed});
 }
-if(message.content === "yuki!help"){ //koro help
+if(message.content === "koro!help"){ //koro help
 
     const embed = new Discord.RichEmbed()
     .setTitle("commande pour les gif")
@@ -260,7 +246,6 @@ if(message.content === "sig!help"){ //sig help
 
     message.channel.send({embed});
 }
-
 if(message.content === "magie!help"){ //magie
  
     const embed = new Discord.RichEmbed()
@@ -270,6 +255,21 @@ if(message.content === "magie!help"){ //magie
     .addField("magie utilisable",
       "magie!nature\nmagie!eau\nmagie!feu")
 
+
+    message.channel.send({embed});
+}
+if(message.content === "Xarrin!help"){ //Xarrin help
+ 
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Xarrin posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Xarrin!nickel\nXarrin!voyeur")
+      .addField("image",
+      "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix\nXarrin!invocation:spiritwater\nXarrin!invocation:spiritearth\nXarrin!invocation:spiritwind\nXarrin!invocation:spiritfire")
 
     message.channel.send({embed});
 }
