@@ -67,5 +67,15 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
+if(message.content === "sig!lose"){ //sig
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/2b4deb2d385487b34f272ba15916b521/tumblr_ofipwwheNI1rypw9yo6_400.gif"
+    }) 
+}
+if(message.content === "sig!win"){ //sig
+        message.channel.send("", {
+        file: "https://78.media.tumblr.com/5168cc03977978b9e03ebb97b99e1451/tumblr_ofipwwheNI1rypw9yo5_400.gif"
+        })
+}
 }
 )
