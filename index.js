@@ -210,13 +210,6 @@ if(message.content === "yuki!invocation:Godness"){ //yuki
     message.channel.send("YOU SHALD NOT PASS")
     }
 }
-if(message.content === "Xarrin!gral"){ //xarin
-    if("320537317423185925".includes(message.author.id))
-    message.channel.send("La solitude c'est quand karma il vas sur mer\nLa solitude c'est quand il est bourré dans un verre\n-----\nIl répond au nom de karma On dirais pas forcément mais il en a du karma\nNous on en peut plus de son karma\n-----\n La solitude c'est quand Lucas se prend un vent\nLa solitude c'est au moment ou il se prend du blanc\n-----\n Il répond au nom de lucas\nnon il ne mange pas encore de caca\nCar il était caché dans un placard\n -----\n La solitude c'est quand Xarrin  il mange son pain\nLa solitude c'est comme son fil il est tout fin\n-----\nil répond au nom de Xarrin\nXarrin, il aime allé touché des sein\nXarrin, il aime allé boire du Vin en touchant des popotins");
-    } 
-    else {
-    message.channel.send("YOU SHALD NOT PASS")
-    }
 if(message.content === "mp!help"){ //MME POOF HELP
     if("293423253949775872".includes(message.author.id))
     
@@ -293,5 +286,12 @@ if(message.content === "yuki!help"){ //koro help
         else {
         message.channel.send("YOU SHALD NOT PASS")
         }
+if(message.content === "Xarrin!gral"){ //xarin
+    if("320537317423185925".includes(message.author.id))
+    message.channel.send("La solitude c'est quand karma il vas sur mer\nLa solitude c'est quand il est bourré dans un verre\n-----\nIl répond au nom de karma On dirais pas forcément mais il en a du karma\nNous on en peut plus de son karma\n-----\n La solitude c'est quand Lucas se prend un vent\nLa solitude c'est au moment ou il se prend du blanc\n-----\n Il répond au nom de lucas\nnon il ne mange pas encore de caca\nCar il était caché dans un placard\n -----\n La solitude c'est quand Xarrin  il mange son pain\nLa solitude c'est comme son fil il est tout fin\n-----\nil répond au nom de Xarrin\nXarrin, il aime allé touché des sein\nXarrin, il aime allé boire du Vin en touchant des popotins");
+    } 
+    else {
+    message.channel.send("YOU SHALD NOT PASS")
+    }
 }
 )
