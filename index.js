@@ -26,6 +26,7 @@ if (message.content === "merci <@437179201284603904>"){
     if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
         message.reply("ERR : TOO MANY LEVEL'S");
         }
+
      if (message.content === "<@437179201284603904>" ){  
 
     const embed = new Discord.RichEmbed()
@@ -232,13 +233,13 @@ if(message.content === "magie!help"){ //magie
 
     message.channel.send({embed});
 }
-if(message.content === "Lucas!MrPuel"){ //magie
-    message.channel.send("magie!nature", {
+if(message.content === "magie!nature"){ //magie
+    message.channel.send("", {
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
 })
 }
 if(message.content === "magie!eau"){ //magie
-    message.channel.send("magie!eau", {
+    message.channel.send("", {
     file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
 }) 
 }
