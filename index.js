@@ -90,7 +90,7 @@ if(message.content === "sig!magic 1"){ //sig
         file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
     }) 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send(":/")
     }
 }
 if(message.content === "sig!magic 1"){ //sig
@@ -108,7 +108,7 @@ if(message.content === "sig!magic 2"){ //sig
         file: "https://78.media.tumblr.com/a0f76ff3f9cfd7df6a836dbf4815cc71/tumblr_ofipwwheNI1rypw9yo2_1280.gif"
     }) 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send("nop")
     }
 }
 if(message.content === "sig!magic 3"){ //sig
@@ -126,7 +126,7 @@ if(message.content === "sig!magic 4"){ //sig
         file: "https://78.media.tumblr.com/e73d1acb290c292c6655d6fde48548cd/tumblr_ofipwwheNI1rypw9yo3_1280.gif"
     }) 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send(" NOT PASS YOU SHALD")
     }
 }
 if(message.content === "Xarrin!nickel"){ //Xarrin
@@ -144,7 +144,7 @@ if(message.content === "Xarrin!Invocation:Byakko"){ //Xarrin
         file: "https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png"
     }) 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send("nop")
     }
 }
 if(message.content === "xarrin!voyeur"){ //Xarrin
@@ -172,7 +172,7 @@ if(message.content === "Xarrin!help"){ //Xarrin
     message.channel.send({embed});
 } 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send("nop")
     }
 if(message.content === "Lucas!KC"){ //MME POOF
     if("293423253949775872".includes(message.author.id))
@@ -189,7 +189,7 @@ if(message.content === "Lucas!FTW"){ //MME POOF
         file: "https://i.skyrock.net/0358/84470358/pics/3103693573_1_17_ENJacXlx.gif"
     }) 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send("nop")
     }
 }
 if(message.content === "Lucas!MrPuel"){ //MME POOF
@@ -207,7 +207,7 @@ if(message.content === "yuki!invocation:Godness"){ //yuki
         file: "https://cdn.discordapp.com/attachments/434681503964725248/435078318610710539/Goddess.png"
     }) 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send("nop")
     }
 }
 if(message.content === "mp!help"){ //MME POOF HELP
@@ -246,7 +246,7 @@ if(message.content === "yuki!help"){ //yuki help
     message.channel.send({embed});
     } 
     else {
-    message.channel.send("YOU SHALD NOT PASS")
+    message.channel.send("nop")
     }
 if(message.content === "yuki!help"){ //koro help
     if("382227962751221762".includes(message.author.id))
@@ -284,7 +284,7 @@ if(message.content === "yuki!help"){ //koro help
         message.channel.send({embed});
         } 
         else {
-        message.channel.send("YOU SHALD NOT PASS")
+        message.channel.send("nop")
         }
 if(message.content === "Xarrin!gral"){ //xarin
     if("320537317423185925".includes(message.author.id))
