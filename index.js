@@ -61,6 +61,70 @@ if (message.content === prefix + "help" ){
   
     message.channel.send({embed});
 }
+if(message.content === "mp!help"){ //MME POOF HELP
+    if("293423253949775872".includes(message.author.id))
+    
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Madame Pouf posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/432275341202030614/435096117504638986/unknown.png")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Lucas!KC\nLucas!FTW\Lucas!MrPuel\nLucas!MrPuel")
+      .addField("image",
+      "rien") 
+
+    message.channel.send({embed});
+    } 
+if(message.content === "yuki!help"){ //yuki help
+    if("418453389576503297".includes(message.author.id))
+
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Yuki posséde")
+    .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435083973069373441/ange_manga_n1.jpg")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "rien")
+    .addField("image",
+      "yuki!invocation:Godness")
+
+    message.channel.send({embed});
+    }
+if(message.content === "yuki!help"){ //koro help
+    if("382227962751221762".includes(message.author.id))
+
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que koro posséde")
+    .setThumbnail("https://media.giphy.com/media/133FgIVnM1g70k/giphy.gif")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "Koro!travaille")
+      .addField("image",
+      "aucun")
+
+    message.channel.send({embed});
+    }
+    if(message.content === "sig!help"){ //sig help
+        if("234368202379886593".includes(message.author.id))
+    
+        const embed = new Discord.RichEmbed()
+        .setTitle("commande pour les gif")
+        .setColor(0x0086AE)
+        .setDescription("voila les gif et image que sig posséde")
+        .setThumbnail("https://image.gamer.ne.jp/news/2011/20110727/00018cb052ae8768e94585c1314982a7a0cc/o/17.jpg")
+        .setFooter("pour plus d'info va te voir vue que c'est toi qui la crée xD")
+        .addField("gif",
+          "sig!win \nsig!lose\nsig!magic 1\nsig!magic 2\nsig!magic 3\n sig!magic 4")
+          .addField("image",
+          "aucun")
+    
+        message.channel.send({embed});
+}
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gig maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
