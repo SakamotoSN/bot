@@ -153,6 +153,7 @@ if (message.content === "salut <@437179201284603904>"){
 }
 if (message.content === "ça va <@437179201284603904>"){
         message.reply("JUST MONIKA");
+        file: "https://cdn.discordapp.com/attachments/427521450866507777/439488487306297364/monika.chr"
 }
 if (message.content === "merci <@437179201284603904>"){
     message.reply("c'est toujours un plaisir :D");
