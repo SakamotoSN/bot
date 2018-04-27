@@ -113,7 +113,7 @@ if(message.content === "magie!help"){ //magie
     .setColor(0x0086AE)
     .setDescription("table des éléments de magie")
     .addField("magie utilisable",
-      "magie!nature\nmagie!eau\nmagie!feu\nmagie!ténèbre\nmagie!éclair")
+      "magie!feu\nmagie!ténèbre\nmagie!éclair")
 
 
     message.channel.send({embed});
@@ -127,7 +127,7 @@ if(message.content === "Xarrin!help"){ //Xarrin help
     .setThumbnail("https://cdn.discordapp.com/attachments/434681503964725248/435060807118749700/SF_Byakko.png")
     .setFooter("pour plus d'info demander a sig :D")
     .addField("gif",
-      "Xarrin!nickel\nXarrin!voyeur")
+      "Xarrin!nickel\nXarrin!voyeur\nXarrin!ham")
       .addField("image",
       "Xarrin!Invocation:Byakko\nXarrin!Invocation:Phoenix\nXarrin!invocation:spiritwater\nXarrin!invocation:spiritearth\nXarrin!invocation:spiritwind\nXarrin!invocation:spiritfire")
 
@@ -274,6 +274,11 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
 }
 if (message.content === "ok"){
     message.reply(`GOOGLE C KUA 1 ZINZOLIN`)
+}
+if(message.content === "Xarrin!ham"){ //Xarrin
+    message.channel.send("", {
+    file: "https://pa1.narvii.com/5994/0561f42850b340049a2ed4628e1ffe358e0dbc96_hq.gif"
+}) 
 }
 }
 )
