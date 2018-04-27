@@ -272,7 +272,8 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
 if(message.content === "magie!eau"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
     file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
-});
+})
+};
     if (message.content === "hentai <@437179201284603904>"){
         message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
     }
@@ -280,7 +281,6 @@ if(message.content === "magie!eau"){ //magie
         message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
         file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
     })
-}
 }
 }
 }
