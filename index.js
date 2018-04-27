@@ -270,6 +270,10 @@ if(message.content === "hentai <@437179201284603904>"){
 if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     message.channel.send("", {
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
-})}
+})
+}
+if (message.content === "ok"){
+    message.reply("GOOGLE")
+}
 }
 )
