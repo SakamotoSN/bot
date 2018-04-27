@@ -67,6 +67,20 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
+if(message.content === "magie!feu"){ //magie
+    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
+    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
+})
+}
+if(message.content === "magie!éclair"){ //magie elect
+    message.channel.send(`**${message.author.username}** lance une attaque magique élèctrique`,{
+    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130838559490052/02.gif"
+})
+}
+if(message.content === "magie!ténèbre"){ //magie voids
+    message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
+    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
+})
 if(message.content === "sig!lose"){ //sig
         message.channel.send("", {
         file: "https://78.media.tumblr.com/2b4deb2d385487b34f272ba15916b521/tumblr_ofipwwheNI1rypw9yo6_400.gif"
@@ -239,7 +253,7 @@ if(message.content === "magie!help"){ //magie
     .setColor(0x0086AE)
     .setDescription("table des éléments de magie")
     .addField("magie utilisable",
-      "magie!nature\nmagie!eau\nmagie!feu")
+      "magie!nature\nmagie!eau\nmagie!feu\nmagie!ténèbre\nmagie!éclair")
 
 
     message.channel.send({embed});
@@ -270,20 +284,7 @@ if(message.content === "magie!eau"){ //magie
     file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
 }) 
 }
-if(message.content === "magie!feu"){ //magie
-    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
-    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
-})
-}
-if(message.content === "magie!éclair"){ //magie elect
-    message.channel.send(`**${message.author.username}** lance une attaque magique élèctrique`,{
-    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130838559490052/02.gif"
-})
-}
-if(message.content === "magie!ténèbre"){ //magie voids
-    message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
-    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
-})
+
 }
 }
 )
