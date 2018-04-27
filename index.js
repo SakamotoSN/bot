@@ -41,7 +41,7 @@ if(message.content === "magie!ténèbre"){ //magie voids
 });
 if (message.content === "hentai <@437179201284603904>"){
     message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
-     
+}
 if(message.content === "magie!nature"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
@@ -280,7 +280,6 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 };
-}
 }
 }
 )
