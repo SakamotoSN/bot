@@ -13,8 +13,38 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-
-if (message.content === "<@437179201284603904>" ){  
+    if (message.content === "salut <@437179201284603904>"){
+    message.reply("Konichiwa :3");
+    console.log("une salutation a éter effectuer");
+}
+if (message.content === "ça va <@437179201284603904>"){
+        message.reply("JUST MONIKA");
+}
+if (message.content === "merci <@437179201284603904>"){
+    message.reply("c'est toujours un plaisir :D");
+}
+    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
+        message.reply("ERR : TOO MANY LEVEL'S");
+        }
+        if(message.content === "magie!feu"){ //magie
+    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
+    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
+})
+}
+if(message.content === "magie!éclair"){ //magie elect
+    message.channel.send(`**${message.author.username}** lance une attaque magique élèctrique`,{
+    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130838559490052/02.gif"
+})
+}
+if(message.content === "magie!ténèbre"){ //magie voids
+    message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
+    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
+})
+if(message.content === "magie!eau"){ //magie
+    message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
+    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
+}) 
+     if (message.content === "<@437179201284603904>" ){  
 
     const embed = new Discord.RichEmbed()
     .setTitle("info sur Sigbot")
@@ -142,30 +172,14 @@ if(message.content === "magie!nature"){ //magie
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
 })
 }
-if(message.content === "magie!eau"){ //magie
-    message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
-    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
-}) 
+
 }
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gig maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
-if(message.content === "magie!feu"){ //magie
-    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
-    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
-})
-}
-if(message.content === "magie!éclair"){ //magie elect
-    message.channel.send(`**${message.author.username}** lance une attaque magique élèctrique`,{
-    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130838559490052/02.gif"
-})
-}
-if(message.content === "magie!ténèbre"){ //magie voids
-    message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
-    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
-})
+
 if(message.content === "sig!lose"){ //sig
         message.channel.send("", {
         file: "https://78.media.tumblr.com/2b4deb2d385487b34f272ba15916b521/tumblr_ofipwwheNI1rypw9yo6_400.gif"
@@ -271,20 +285,6 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
 }) 
 }
-}    
-if (message.content === "salut <@437179201284603904>"){
-    message.reply("Konichiwa :3");
-    console.log("une salutation a éter effectuer");
 }
-if (message.content === "ça va <@437179201284603904>"){
-        message.reply("JUST MONIKA");
-}
-if (message.content === "merci <@437179201284603904>"){
-    message.reply("c'est toujours un plaisir :D");
-}
-    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
-        message.reply("ERR : TOO MANY LEVEL'S");
-        }
-
 }
 )
