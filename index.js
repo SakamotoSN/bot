@@ -31,11 +31,6 @@ if (message.content === "merci <@437179201284603904>"){
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
 })
 };
-if(message.content === "magie!nature"){ //magie
-    message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
-    file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
-})
-};
 if(message.content === "sig!lose"){ //sig
         message.channel.send("", {
         file: "https://78.media.tumblr.com/2b4deb2d385487b34f272ba15916b521/tumblr_ofipwwheNI1rypw9yo6_400.gif"
@@ -146,6 +141,10 @@ if(message.content === "magie!eau"){ //magie
     if (message.content === "hentai <@437179201284603904>"){
         message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
     }
+    if(message.content === "magie!nature"){ //magie
+        message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
+        file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
+    })
 if (message.content === "<@437179201284603904>" ){ 
 
     const embed = new Discord.RichEmbed()
@@ -281,6 +280,7 @@ if(message.content === "magie!ténèbre"){ //magie
     message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
     file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
 });
+}
 }
 }
 )
