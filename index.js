@@ -268,7 +268,7 @@ if(message.content === "Xarrin!invocation:spiritfire"){ //xarin
 if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     message.channel.send("", {
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
-});
+})};
 if(message.content === "magie!eau"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
     file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
@@ -281,7 +281,6 @@ if(message.content === "magie!eau"){ //magie
         message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
         file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
     })
-}
 }
 }
 )
