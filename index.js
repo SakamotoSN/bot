@@ -13,21 +13,8 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-    if (message.content === "salut <@437179201284603904>"){
-    message.reply("Konichiwa :3");
-    console.log("une salutation a éter effectuer");
-}
-if (message.content === "ça va <@437179201284603904>"){
-        message.reply("JUST MONIKA");
-}
-if (message.content === "merci <@437179201284603904>"){
-    message.reply("c'est toujours un plaisir :D");
-}
-    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
-        message.reply("ERR : TOO MANY LEVEL'S");
-        }
 
-     if (message.content === "<@437179201284603904>" ){  
+if (message.content === "<@437179201284603904>" ){  
 
     const embed = new Discord.RichEmbed()
     .setTitle("info sur Sigbot")
@@ -284,6 +271,20 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
 }) 
 }
+}    
+if (message.content === "salut <@437179201284603904>"){
+    message.reply("Konichiwa :3");
+    console.log("une salutation a éter effectuer");
 }
+if (message.content === "ça va <@437179201284603904>"){
+        message.reply("JUST MONIKA");
+}
+if (message.content === "merci <@437179201284603904>"){
+    message.reply("c'est toujours un plaisir :D");
+}
+    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
+        message.reply("ERR : TOO MANY LEVEL'S");
+        }
+
 }
 )
