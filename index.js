@@ -39,9 +39,6 @@ if(message.content === "magie!ténèbre"){ //magie voids
     message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
     file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
 });
-if (message.content === "hentai <@437179201284603904>"){
-    message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
-}
 if(message.content === "magie!nature"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
     file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
@@ -152,7 +149,11 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
 });
 if(message.content === "magie!eau"){ //magie
     message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
-    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"});
+    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
+});
+    if (message.content === "hentai <@437179201284603904>"){
+        message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
+    }
 if (message.content === "<@437179201284603904>" ){ 
 
     const embed = new Discord.RichEmbed()
