@@ -273,11 +273,11 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
 })
 }
 if (message.content === "ok"){
-    message.reply("GOOGLE")
+    message.reply(`tu a oublier le "p" au debut et le "émon" a la fin`)
 }
-if(message.content === "magie!eau"){ //magie
-    message.channel.send(`**${member.user.username}** lance une attaque magique d'eau`, {
-    file: "http://galeriedesartistes.g.a.pic.centerblog.net/79812522.gif"
+if(message.content === "magie!nature"){ //magie
+    message.channel.send(`**${member.user.username}** lance une attaque magique naturel`, {
+    file: "http://media.toucharger.fr/web/toucharger/upload/image_domain/2/6/26509/160x120-26509.gif"
 })}
 }
 )
