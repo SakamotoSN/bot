@@ -134,7 +134,7 @@ if(message.content === "Xarrin!help"){ //Xarrin help
     message.channel.send({embed});
 }
 if (message.content === "sigbot!gif"){
-    message.channel.send("on ce met au image et au gig maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
+    message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
@@ -228,7 +228,7 @@ if(message.content === "Lucas!KC"){ //MME POOF
     }) 
 }
 if(message.content === "Lucas!FTW"){ //MME POOF
-        message.channel.send("Ma réponce :", {
+        message.channel.send("Ma réponse :", {
         file: "https://i.skyrock.net/0358/84470358/pics/3103693573_1_17_ENJacXlx.gif"
     }) 
 }
@@ -272,9 +272,6 @@ if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     message.channel.send("", {
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
 })
-}
-if (message.content === "ok"){
-    message.reply(`GOOGLE C KUA 1 ZINZOLIN`)
 }
 if(message.content === "Xarrin!ham"){ //Xarrin
     message.channel.send("", {
