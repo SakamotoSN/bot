@@ -304,9 +304,9 @@ if(message.content === "sakamoto!xD"){ //Sakamoto-san
 })
 }
 if(message.content === "sakamoto!srx"){ //Sakamoto-san
-    message.channel.send("https://media.giphy.com/media/RRwhNPJMaymm4/giphy.gif", {
-    file: ""
+    message.channel.send("", {
+    file: "https://media.giphy.com/media/RRwhNPJMaymm4/giphy.gif"
 })
 }
 }
-)
+) //faire la comamde halp pour sakamoto-san
