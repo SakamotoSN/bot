@@ -278,7 +278,7 @@ if(message.content === "Xarrin!ham"){ //Xarrin
     file: "https://pa1.narvii.com/5994/0561f42850b340049a2ed4628e1ffe358e0dbc96_hq.gif"
 }) 
 }
-if(message.content === "Sakamoto!sleep"){ //Sakamoto-san
+if(message.content === "sakamoto!sleep"){ //Sakamoto-san
     message.channel.send("", {
     file: "https://media.giphy.com/media/bo0btBvaKDKeY/giphy.gif"
 })
