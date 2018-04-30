@@ -27,7 +27,7 @@ if (message.content === "<@437179201284603904>" ){
     .setTimestamp()
     .setURL("https://discordapp.com/api/oauth2/authorize?client_id=437179201284603904&permissions=2146958583&scope=bot")
     .addField("le bot peu reagir avec 3 maniere ",
-      "un texte \n le mentionner \n et utiliser le prefix")
+      "un texte \n le mentionner \n et utiliser le prefix\n\nutiliser la commande sigbot!help pour plus d'info")
     .addField("prefix du bot", "le prefix du bot est sigbot! mais il est possible qu'il change", false);
   
     message.channel.send({embed});
@@ -277,6 +277,36 @@ if(message.content === "Xarrin!ham"){ //Xarrin
     message.channel.send("", {
     file: "https://pa1.narvii.com/5994/0561f42850b340049a2ed4628e1ffe358e0dbc96_hq.gif"
 }) 
+}
+if(message.content === "Sakamoto!sleep"){ //Sakamoto-san
+    message.channel.send("", {
+    file: "https://media.giphy.com/media/bo0btBvaKDKeY/giphy.gif"
+})
+}
+if(message.content === "sakamoto!play"){ //Sakamoto-san
+    message.channel.send("", {
+    file: "https://78.media.tumblr.com/fba185be4b118ac2bc9f2b913f02bc08/tumblr_n9yumpiQ3y1rmdq5eo4_500.gif"
+})
+}
+if(message.content === "sakamoto!play 2"){ //Sakamoto-san
+    message.channel.send("", {
+    file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif"
+})
+}
+if(message.content === "sakamoto!play 3"){ //Sakamoto-san
+    message.channel.send("", {
+    file: "https://i.gifer.com/8X8r.gif"
+})
+}
+if(message.content === "sakamoto!xD"){ //Sakamoto-san
+    message.channel.send("", {
+    file: "https://static.fjcdn.com/gifs/Sakamoto+anime+nichijou_80d9f8_4843458.gif"
+})
+}
+if(message.content === "sakamoto!srx"){ //Sakamoto-san
+    message.channel.send("https://media.giphy.com/media/RRwhNPJMaymm4/giphy.gif", {
+    file: ""
+})
 }
 }
 )
