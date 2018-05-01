@@ -133,6 +133,21 @@ if(message.content === "Xarrin!help"){ //Xarrin help
 
     message.channel.send({embed});
 }
+if(message.content === "Xarrin!help"){ //sakamoto help
+ 
+    const embed = new Discord.RichEmbed()
+    .setTitle("commande pour les gif")
+    .setColor(0x0086AE)
+    .setDescription("voila les gif et image que Sakamoto-san posséde")
+    .setThumbnail("http://i0.kym-cdn.com/photos/images/newsfeed/000/714/836/f31.gif")
+    .setFooter("pour plus d'info demander a sig :D")
+    .addField("gif",
+      "sakamoto!sleep\nsakamoto!play\nsakamoto!play 2\nsakamoto!play 3\nsakamoto!xD\nsakamoto!srx")
+      .addField("image",
+      "aucun")
+
+    message.channel.send({embed});
+}
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
