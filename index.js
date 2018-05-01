@@ -113,7 +113,7 @@ if(message.content === "magie!help"){ //magie
     .setColor(0x0086AE)
     .setDescription("table des éléments de magie")
     .addField("magie utilisable",
-      "magie!feu\nmagie!ténèbre\nmagie!éclair")
+      "magie!feu\nmagie!ténèbre\nmagie!éclair\nmagie!glace\nmagie!vent")
 
 
     message.channel.send({embed});
@@ -160,6 +160,16 @@ if(message.content === "magie!éclair"){ //magie
 if(message.content === "magie!ténèbre"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
     file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
+});
+}
+if(message.content === "magie!glace"){ //magie 
+    message.channel.send(`**${message.author.username}** lance une attaque magique de vent`,{
+    file: "https://i.pinimg.com/originals/98/51/59/985159cc49c09556b29c2264208028ca.gif"
+});
+}
+if(message.content === "magie!vent"){ //magie 
+    message.channel.send(`**${message.author.username}** lance une attaque magique de glace`,{
+    file: "https://blog-imgs-18-origin.fc2.com/e/t/e/eternalhydrogen/skill_21111005_effect.gif"
 });
 }
 if (message.content === "salut <@437179201284603904>"){
