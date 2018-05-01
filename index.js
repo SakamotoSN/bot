@@ -323,5 +323,10 @@ if(message.content === "sakamoto!srx"){ //Sakamoto-san
     file: "https://media.giphy.com/media/RRwhNPJMaymm4/giphy.gif"
 })
 }
+if(message.content === "I like trains"){ //Sakamoto-san
+    message.channel.send(":D", {
+    file: "https://thumbs.gfycat.com/LightheartedShinyBobcat-max-1mb.gif"
+})
 }
-) //faire la comamde halp pour sakamoto-san
+}
+) 
