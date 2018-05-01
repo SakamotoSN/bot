@@ -133,7 +133,7 @@ if(message.content === "Xarrin!help"){ //Xarrin help
 
     message.channel.send({embed});
 }
-if(message.content === "Xarrin!help"){ //sakamoto help
+if(message.content === "sakamoto!help"){ //sakamoto help
  
     const embed = new Discord.RichEmbed()
     .setTitle("commande pour les gif")
