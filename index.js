@@ -113,7 +113,7 @@ if(message.content === "magie!help"){ //magie
     .setColor(0x0086AE)
     .setDescription("table des éléments de magie")
     .addField("magie utilisable",
-      "magie!feu\nmagie!ténèbre\nmagie!éclair\nmagie!glace\nmagie!vent")
+      "magie!feu\nmagie!ténèbre\nmagie!éclair\nmagie!glace\nmagie!vent\magie!temps\nmagie!lumière")
 
 
     message.channel.send({embed});
@@ -170,6 +170,16 @@ if(message.content === "magie!glace"){ //magie
 if(message.content === "magie!vent"){ //magie 
     message.channel.send(`**${message.author.username}** lance une attaque magique de glace`,{
     file: "https://blog-imgs-18-origin.fc2.com/e/t/e/eternalhydrogen/skill_21111005_effect.gif"
+});
+}
+if(message.content === "magie!temps"){ //magie 
+    message.channel.send(`**${message.author.username}** lance une attaque magique temporelle\n(on a pas encore le gif deso)`,{
+    file: ""
+});
+}
+if(message.content === "magie!lumière"){ //magie 
+    message.channel.send(`**${message.author.username}** lance une attaque magique de lumière`,{
+    file: "https://img1.picmix.com/output/stamp/normal/8/7/8/3/93878_dcd8b.gif"
 });
 }
 if (message.content === "salut <@437179201284603904>"){
