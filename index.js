@@ -173,7 +173,7 @@ if(message.content === "magie!vent"){ //magie
 });
 }
 if(message.content === "magie!temps"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique temporelle\n(on a pas encore le gif deso)`,{
+    message.channel.send(`**${message.author.username}** lance une attaque magique temporelle`,{
     file: "https://cdn.discordapp.com/attachments/440164860702228480/440973908792049674/image.gif"
 });
 }
