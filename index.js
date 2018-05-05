@@ -345,7 +345,7 @@ if(message.content === "sakamoto!srx"){ //Sakamoto-san
 }
 if(message.content === "I like trains"){ //Sakamoto-san
     message.channel.send(":D", {
-    file: "https://imgur.com/gallery/7zkiG"
+    file: "https://i.imgur.com/7zkiG.gif"
 })
 }
 }
