@@ -343,9 +343,14 @@ if(message.content === "sakamoto!srx"){ //Sakamoto-san
     file: "https://media.giphy.com/media/RRwhNPJMaymm4/giphy.gif"
 })
 }
-if(message.content === "I like trains"){ //Sakamoto-san
+if(message.content === "I like trains"){ 
     message.channel.send(":D", {
     file: "https://i.imgur.com/7zkiG.gif"
+})
+}
+if(message.content === "salope Martine"){ 
+    message.channel.send("!!!!!", {
+    file: "https://cdn.discordapp.com/attachments/408257108665040896/444116108203786241/53f39401d3653f077c30c84c4acae7ac.png"
 })
 }
 }
