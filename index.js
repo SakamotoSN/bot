@@ -13,41 +13,10 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-    
-
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
-}
-if(message.content === "Magie!éclair"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique élèctrique`,{
-    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130838559490052/02.gif"
-})}
-if(message.content === "Magie!ténèbre"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique ténèbreuse`,{
-    file: "https://cdn.discordapp.com/attachments/434750011771977739/439130817097236481/6e5f4ce3b0f5ea1c28d9788aa2a6eb376a041314_hq.gif"
-});
-}
-if(message.content === "Magie!glace"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique de glace`,{
-    file: "https://blog-imgs-18-origin.fc2.com/e/t/e/eternalhydrogen/skill_21111005_effect.gif"
-});
-}
-if(message.content === "Magie!vent"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique de vent`,{
-    file: "https://i.pinimg.com/originals/98/51/59/985159cc49c09556b29c2264208028ca.gif"
-});
-}
-if(message.content === "Magie!temps"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique temporelle`,{
-    file: "https://cdn.discordapp.com/attachments/440164860702228480/440973908792049674/image.gif"
-});
-}
-if(message.content === "Magie!lumière"){ //magie 
-    message.channel.send(`**${message.author.username}** lance une attaque magique de lumière`,{
-    file: "https://img1.picmix.com/output/stamp/normal/8/7/8/3/93878_dcd8b.gif"
-});
 }
 if (message.content === "salut <@437179201284603904>"){
     message.reply("Konichiwa :3");
@@ -60,9 +29,6 @@ if (message.content === "ça va <@437179201284603904>"){
 if (message.content === "merci <@437179201284603904>"){
     message.reply("c'est toujours un plaisir :D");
 }
-    if (message.content === "haut haut bas bas gauche droite gauche droite B A"){
-        message.reply("ERR : TOO MANY LEVEL'S");
-        }
  if(message.content === "Magie!feu"){ //magie
     message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
     file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
@@ -166,9 +132,6 @@ if(message.content === "Xarrin!invocation:spiritfire"){ //xarin
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439071422992744448/elemental_04.png"
 }) 
 }
-if(message.content === "hentai <@437179201284603904>"){
-        message.reply("https://www.youtube.com/watch?v=5FjWe31S_0g&feature=youtu.be");
-    }
 if(message.content === "Xarrin!invocation:Kuro"){ //xarin
     message.channel.send("", {
     file: "https://cdn.discordapp.com/attachments/434681503964725248/439133776849797122/d825bf93ca36fdcbf62091b1cc4e6936.png"
@@ -281,21 +244,6 @@ if(message.content === "yuki!help"){ //yuki help
 
     message.channel.send({embed});
 }
-if(message.content === "koro!help"){ //koro help
-
-    const embed = new Discord.RichEmbed()
-    .setTitle("commande pour les gif")
-    .setColor(0x0086AE)
-    .setDescription("voila les gif et image que koro posséde")
-    .setThumbnail("https://media.giphy.com/media/133FgIVnM1g70k/giphy.gif")
-    .setFooter("pour plus d'info demander a sig :D")
-    .addField("gif",
-      "Koro!travaille")
-      .addField("image",
-      "aucun")
-
-    message.channel.send({embed});
-}
 if(message.content === "sig!help"){ //sig help
 
     const embed = new Discord.RichEmbed()
@@ -308,18 +256,6 @@ if(message.content === "sig!help"){ //sig help
       "sig!win \nsig!lose\nsig!magic 1\nsig!magic 2\nsig!magic 3\n sig!magic 4")
       .addField("image",
       "aucun")
-
-    message.channel.send({embed});
-}
-if(message.content === "Magie!help"){ //magie
- 
-    const embed = new Discord.RichEmbed()
-    .setTitle("commande magique")
-    .setColor(0x0086AE)
-    .setDescription("table des éléments de magie")
-    .addField("magie utilisable",
-      "Magie!feu\nMagie!ténèbre\nMagie!éclair\nMagie!glace\nMagie!vent\nMagie!temps\nMagie!lumière")
-
 
     message.channel.send({embed});
 }
