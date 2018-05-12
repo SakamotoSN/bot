@@ -144,7 +144,7 @@ if(message.content === "salope Martine"){
 }
 if(message.content === "Qui est Mokigrokaka ?"){ 
     message.channel.send("Cette salope", {
-    file: "https://cdn.discordapp.com/attachments/292726526657429504/444879710430822400/Mokigrokaka.png"
+    file: "https://cdn.discordapp.com/attachments/292726526657429504/444879710430822400/Mokigrokaka.PNG"
 })
 }
 if (message.content === "<@437179201284603904>" ){ 
