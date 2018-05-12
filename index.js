@@ -29,46 +29,6 @@ if (message.content === "ça va <@437179201284603904>"){
 if (message.content === "merci <@437179201284603904>"){
     message.reply("c'est toujours un plaisir :D");
 }
- if(message.content === "Magie!feu"){ //magie
-    message.channel.send(`**${message.author.username}** lance une attaque magique de feu`,{
-    file: "http://www.cheminee-poele-bordeaux.fr/wp-content/uploads/2014/09/flamme-gif.gif"
-})
-}
-if(message.content === "sig!lose"){ //sig
-        message.channel.send("", {
-        file: "https://78.media.tumblr.com/2b4deb2d385487b34f272ba15916b521/tumblr_ofipwwheNI1rypw9yo6_400.gif"
-    }) 
-}
-if(message.content === "sig!win"){ //sig
-        message.channel.send("", {
-        file: "https://78.media.tumblr.com/5168cc03977978b9e03ebb97b99e1451/tumblr_ofipwwheNI1rypw9yo5_400.gif"
-        })
-}
-if(message.content === "sig!magic 1"){ //sig
-        message.channel.send("", {
-        file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
-    })
-}
-if(message.content === "sig!magic 1"){ //sig
-        message.channel.send("", {
-        file: "https://78.media.tumblr.com/f6baae5013c9b7cbc1d1f7af004bc405/tumblr_ofipwwheNI1rypw9yo1_1280.gif"
-    }) 
-}
-if(message.content === "sig!magic 2"){ //sig
-        message.channel.send("", {
-        file: "https://78.media.tumblr.com/a0f76ff3f9cfd7df6a836dbf4815cc71/tumblr_ofipwwheNI1rypw9yo2_1280.gif"
-    })
-}
-if(message.content === "sig!magic 3"){ //sig
-        message.channel.send("", {
-        file: "http://78.media.tumblr.com/fbe10ec5eeed5eb4d6b73183aa08b59c/tumblr_ofipwwheNI1rypw9yo4_1280.gif"
-    })
-}
-if(message.content === "sig!magic 4"){ //sig
-        message.channel.send("", {
-        file: "https://78.media.tumblr.com/e73d1acb290c292c6655d6fde48548cd/tumblr_ofipwwheNI1rypw9yo3_1280.gif"
-    }) 
-}
 if(message.content === "Xarrin!nickel"){ //Xarrin
         message.channel.send("", {
         file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
@@ -182,6 +142,11 @@ if(message.content === "salope Martine"){
     file: "https://cdn.discordapp.com/attachments/408257108665040896/444116108203786241/53f39401d3653f077c30c84c4acae7ac.png"
 })
 }
+if(message.content === "Qui est Mokigrokaka ?"){ 
+    message.channel.send("Cette salope", {
+    file: "https://cdn.discordapp.com/attachments/292726526657429504/444879710430822400/Mokigrokaka.png"
+})
+}
 if (message.content === "<@437179201284603904>" ){ 
 
     const embed = new Discord.RichEmbed()
@@ -195,7 +160,7 @@ if (message.content === "<@437179201284603904>" ){
     .setTimestamp()
     .setURL("https://discordapp.com/api/oauth2/authorize?client_id=437179201284603904&permissions=2146958583&scope=bot")
     .addField("le bot peu reagir avec 3 maniere ",
-      "un texte \n le mentionner \n et utiliser le prefix\n\nutiliser la commande sigbot!help pour plus d'info")
+      "un texte \n le mentionner \n et utiliser le prefix\nutiliser la commande sigbot!help pour plus d'info")
     .addField("prefix du bot", "le prefix du bot est sigbot! mais il est possible qu'il change", false);
   
     message.channel.send({embed});
@@ -208,7 +173,7 @@ if (message.content === prefix + "help" ){
     .setDescription("voici les commande que le bot peu faire :D")
     .setFooter("pour plus d'info demander a son créateur :3")
     .addField("commande qui devais etre drole",
-      "lui dire salut (avec une mention a la fin) \n lui demander si ça va (avec une mention a la fin) \n lui dire merci (avec une mention a la fin) \n utiliser le konnami code \n lui dire hentai (avec une mention a la fin)")
+      "lui dire salut (avec une mention a la fin) \n lui demander si ça va (avec une mention a la fin) \n lui dire merci (avec une mention a la fin)")
       .addField("commande special",
       "sigbot!gif")
   
