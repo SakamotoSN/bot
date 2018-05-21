@@ -264,7 +264,9 @@ if(message.content === "the test"){
     .addField("crée le", message.guild.createdAt)
     .addField("vous avez rejoin", message.member.joinedAt)
     .addField("nombre de membre", message.guild.memberCount);
-    return message.channel.send(serverembed);
+
+
+    message.channel.send({embed});
 }
 }
 ) 
