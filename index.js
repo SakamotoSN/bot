@@ -12,6 +12,9 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+    if (message.content === "sigbot!test2"){
+    message.member.removeRole("name", "Antoine Daniel")
+    };
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
