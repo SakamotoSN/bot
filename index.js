@@ -256,7 +256,7 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 if(message.content === "the test"){
 
     const embed = new Discord.RichEmbed()
-    setDescription("information du serveur")
+    .setDescription("information du serveur")
     .setColor(0x0086AE)
     .setThumbnail(sicon)
     .addField("noom du serveur", message.guild.name)
