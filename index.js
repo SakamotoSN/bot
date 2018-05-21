@@ -254,7 +254,7 @@ if(message.content === "sakamoto!help"){ //sakamoto help
     message.channel.send({embed});
 }
 if (message.content == "remove role") {
-    let role = message.guild.roles.get("304888807516405761");  
+    let role = message.guild.roles.get("448156328347566109");  
     message.server.members.get("name", "Riny").addRole(role).catch(console.error);
 }
 }
