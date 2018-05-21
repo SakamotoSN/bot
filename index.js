@@ -255,8 +255,7 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 }
 if(message.content === "the test"){
 
-    let sicon = message.guild.displayAvatarURL;
-    let serverembed = new Discord.RichEmbed()
+    const embed = new Discord.RichEmbed()
     setDescription("information du serveur")
     .setColor(0x0086AE)
     .setThumbnail(sicon)
@@ -264,7 +263,6 @@ if(message.content === "the test"){
     .addField("crée le", message.guild.createdAt)
     .addField("vous avez rejoin", message.member.joinedAt)
     .addField("nombre de membre", message.guild.memberCount);
-
 
     message.channel.send({embed});
 }
