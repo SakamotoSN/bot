@@ -253,19 +253,5 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 
     message.channel.send({embed});
 }
-if(message.content === "the test"){
-
-    const embed = new Discord.RichEmbed()
-    .setTitle("test")
-    .setDescription("information du serveur")
-    .setColor(0x0086AE)
-    .setThumbnail(sicon)
-    .addField("noom du serveur", message.guild.name)
-    .addField("crée le", message.guild.createdAt)
-    .addField("vous avez rejoin", message.member.joinedAt)
-    .addField("nombre de membre", message.guild.memberCount);
-
-    message.channel.send({embed});
-}
 }
 )
