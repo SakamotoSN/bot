@@ -5,7 +5,7 @@ var prefix = ("sigbot!")
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
-    bot.user.setPresence({ game: { name: 'faire greve'}, status: 'online'}) //en ligne;
+    bot.user.setPresence({ game: { name: 'faire greve'}, status: 'invisible'})
     console.log("Connected")});
 
 bot.login(process.env.TOKEN);
@@ -208,7 +208,7 @@ if(message.content === "yuki!help"){ //yuki help
 
     message.channel.send({embed});
 }
-if(message.content === "sig!help"){ //sig help
+if(message.content === "s!help"){ //sig help
 
     const embed = new Discord.RichEmbed()
     .setTitle("commande pour les gif")
