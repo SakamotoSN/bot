@@ -13,7 +13,7 @@ var prefix = ("sigbot!")
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
-    bot.user.setPresence({ game: { name: 'faire des crepe pour niko le chat'}, status: 'online'})
+    bot.user.setPresence({ game: { name: 'faire des crepes pour niko'}, status: 'online'})
     console.log("Connected")});
 
 bot.login(process.env.TOKEN);
@@ -35,15 +35,15 @@ if(!db.get("xp").find({user : msgauthor}).value()){
         
         db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
 
-        if(message.content === "sigbot!xp"){
+        if(message.content === "xp²"){
             var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
             var xpfinal = Object.values(xp);
             var xp_embed = new Discord.RichEmbed()
-            .setTitle(`XP de ${message.author.username}`)
-            .setColor('0x0086AE')
+            .setTitle(`Stat des XP de ${message.author.username}`)
+            .setColor('0xcc0099')
             .setDescription("Affichage des XP")
             .addField("XP:", `${xpfinal[1]} xp`)
-            .setFooter(":D")
+            .setFooter("enjoy")
             message.channel.send({embed: xp_embed});
         }}
 if (message.content === "sigbot!gif"){
@@ -209,6 +209,8 @@ if (message.content === prefix + "help" ){
       "lui dire salut (avec une mention a la fin) \n lui demander si ça va (avec une mention a la fin) \n lui dire merci (avec une mention a la fin)")
       .addField("commande special",
       "sigbot!gif")
+      .addField("commande utile",
+      "sigbot!xp")
   
     message.channel.send({embed});
 }
