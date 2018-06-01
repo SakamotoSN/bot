@@ -65,7 +65,7 @@ if (randnum == 3){
     message.channel.send(`Hi ${message.author.username}`);
 }
 if (randnum == 4){
-    consol.log("UN 4 DANS LE RANDOM")  
+    console.log("UN 4 DANS LE RANDOM")  
   }
 }
 if (message.content === "Ça va <@437179201284603904>"){
@@ -80,7 +80,7 @@ if (randnum == 3){
     message.channel.send("Pas trop\ntoute ces mise a jour pour les teste me rende un peu fatiguer :/");
 }
 if (randnum == 4){
-    consol.log("UN 4 DANS LE RANDOM")  
+    console.log("UN 4 DANS LE RANDOM")  
   }
 }
 if (message.content === "Merci <@437179201284603904>"){
@@ -95,7 +95,7 @@ if (randnum == 3){
     message.channel.send("Tout le plaisir et pour moi :3");
 }
 if (randnum == 4){
-    consol.log("UN 4 DANS LE RANDOM")  
+    console.log("UN 4 DANS LE RANDOM")  
   }
 }
 if(message.content === "Xarrin!nickel"){ //Xarrin
