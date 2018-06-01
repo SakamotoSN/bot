@@ -22,15 +22,13 @@ bot.login(process.env.TOKEN);
 
 
 bot.on("guildMemberAdd", member => {
-    await
-    member.guild.channels.find("name", "général").send(`SELAMA BAGI ${member}`)
+    
+member.guild.channels.find("name", "général").send(`${member} vien de POP de nul pars '^'`)
     })
     bot.on("guildMemberRemove", member => {
-        await
-    member.guild.channels.find("name", "général").send(`BYE BYE ${member}`)
+    member.guild.channels.find("name", "général").send(`${member} a DEPOP :O`)
     })
     bot.on("guildMemberAdd", member => {
-        await
         var role = member.guild.roles.find('name', 'Membres');
     member.addRole(role)
     })
