@@ -56,35 +56,35 @@ if (message.content === "sigbot!gif"){
 if (message.content === "Salut <@437179201284603904>"){
     random();
     if (randnum == 1){
-        //metre fucking commande ici
+     message.reply(`Selama Pagi ${message.author.username}`);
 }
 if (randnum == 2){
-    //metre fucking commande ici
+    message.reply(`Konichiwa ${message.author.username}`);
 }
 if (randnum == 3){
-    //metre fucking commande ici
+    message.reply(`Hi ${message.author.username}`);
 }}
 if (message.content === "Ça va <@437179201284603904>"){
     random();
     if (randnum == 1){
-        //metre fucking commande ici
+        message.reply("Ça va :D\nje suis actuellement avec mon dev :3");
 }
 if (randnum == 2){
-    //metre fucking commande ici
+    message.reply("Pas au top\nmon dev c'est encore planter sur une commande T^T");
 }
 if (randnum == 3){
-    //metre fucking commande ici
+    message.reply("Pas trop\ntoute ces mise a jour pour les teste me rende un peu fatiguer :/");
 }}
 if (message.content === "Merci <@437179201284603904>"){
     random();
     if (randnum == 1){
-        //metre fucking commande ici
+        message.reply("Pas de quoi :D");
 }
 if (randnum == 2){
-    //metre fucking commande ici
+    message.reply("C'est un honneur");
 }
 if (randnum == 3){
-    //metre fucking commande ici
+    message.reply("Tout le plaisir et pour moi :3");
 }}
 if(message.content === "Xarrin!nickel"){ //Xarrin
         message.channel.send("", {
