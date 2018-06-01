@@ -29,7 +29,7 @@ member.guild.channels.find("name", "général").send(`${member} vien de POP de n
     member.guild.channels.find("name", "général").send(`${member} a DEPOP :O`)
     })
     bot.on("guildMemberAdd", member => {
-        var role = member.guild.roles.find('name', 'Membres');
+        var role = member.guild.roles.find('name', 'Riny');
     member.addRole(role)
     })
 bot.on('message', message => {
