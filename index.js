@@ -23,13 +23,13 @@ bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member => {
     
-member.guild.channels.find("name", "english-only").send(`${member} vien de POP de nul pars '^'`)
+member.guild.channels.find("name", "👑portail").send(`${member} vien de POP de nul pars '^'`)
     })
     bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "english-only").send(`${member} a DEPOP :O`)
+    member.guild.channels.find("name", "👑portail").send(`${member} a DEPOP :O`)
     })
     bot.on("guildMemberAdd", member => {
-        var role = member.guild.roles.find('name', 'Riny');
+        var role = member.guild.roles.find('name', 'new');
     member.addRole(role)
     })
 bot.on('message', message => {
