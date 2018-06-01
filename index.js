@@ -68,7 +68,7 @@ if (randnum == 4){
     console.log("UN 4 DANS LE RANDOM")  
   }
 }
-if (message.content === "Ça va <@437179201284603904>"){
+if (message.content === "Ça va <@437179201284603904> ?"){
     random();
     if (randnum == 1){
         message.channel.send("Ça va :D\nje suis actuellement avec mon dev :3");
