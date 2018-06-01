@@ -63,7 +63,11 @@ if (randnum == 2){
 }
 if (randnum == 3){
     message.channel.send(`Hi ${message.author.username}`);
-}}
+}
+if (randnum == 4){
+    consol.log("UN 4 DANS LE RANDOM")  
+  }
+}
 if (message.content === "Ça va <@437179201284603904>"){
     random();
     if (randnum == 1){
@@ -74,7 +78,11 @@ if (randnum == 2){
 }
 if (randnum == 3){
     message.channel.send("Pas trop\ntoute ces mise a jour pour les teste me rende un peu fatiguer :/");
-}}
+}
+if (randnum == 4){
+    consol.log("UN 4 DANS LE RANDOM")  
+  }
+}
 if (message.content === "Merci <@437179201284603904>"){
     random();
     if (randnum == 1){
@@ -85,7 +93,11 @@ if (randnum == 2){
 }
 if (randnum == 3){
     message.channel.send("Tout le plaisir et pour moi :3");
-}}
+}
+if (randnum == 4){
+    consol.log("UN 4 DANS LE RANDOM")  
+  }
+}
 if(message.content === "Xarrin!nickel"){ //Xarrin
         message.channel.send("", {
         file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
