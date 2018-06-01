@@ -56,35 +56,35 @@ if (message.content === "sigbot!gif"){
 if (message.content === "Salut <@437179201284603904>"){
     random();
     if (randnum == 1){
-     message.send(`Selama Pagi ${message.author.username}`);
+     message.channel.send(`Selama Pagi ${message.author.username}`);
 }
 if (randnum == 2){
-    message.send(`Konichiwa ${message.author.username}`);
+    message.channel.send(`Konichiwa ${message.author.username}`);
 }
 if (randnum == 3){
-    message.send(`Hi ${message.author.username}`);
+    message.channel.send(`Hi ${message.author.username}`);
 }}
 if (message.content === "Ça va <@437179201284603904>"){
     random();
     if (randnum == 1){
-        message.send("Ça va :D\nje suis actuellement avec mon dev :3");
+        message.channel.send("Ça va :D\nje suis actuellement avec mon dev :3");
 }
 if (randnum == 2){
-    message.send("Pas au top\nmon dev c'est encore planter sur une commande T^T");
+    message.channel.send("Pas au top\nmon dev c'est encore planter sur une commande T^T");
 }
 if (randnum == 3){
-    message.send("Pas trop\ntoute ces mise a jour pour les teste me rende un peu fatiguer :/");
+    message.channel.send("Pas trop\ntoute ces mise a jour pour les teste me rende un peu fatiguer :/");
 }}
 if (message.content === "Merci <@437179201284603904>"){
     random();
     if (randnum == 1){
-        message.send("Pas de quoi :D");
+        message.channel.send("Pas de quoi :D");
 }
 if (randnum == 2){
-    message.send("C'est un honneur");
+    message.channel.send("C'est un honneur");
 }
 if (randnum == 3){
-    message.send("Tout le plaisir et pour moi :3");
+    message.channel.send("Tout le plaisir et pour moi :3");
 }}
 if(message.content === "Xarrin!nickel"){ //Xarrin
         message.channel.send("", {
