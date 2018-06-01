@@ -53,6 +53,16 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
+bot.on("guildMemberAdd", member => {
+member.guild.channels.find("name", "général").send(`SELAMA BAGI ${member}`)
+})
+bot.on("guildMemberRemove", member => {
+member.guild.channels.find("name", "général").send(`BYE BYE ${member}`)
+})
+bot.on("guildMemberAdd", member => {
+    var role = member.guild.roles.find('name', 'Membres');
+member.addRole(role)
+})
 if (message.content === "Salut <@437179201284603904>"){
     random();
     if (randnum == 1){
