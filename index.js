@@ -4,12 +4,14 @@ const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 const client = new Discord.Client();
 
+
 const adapter = new FileSync('database.json');
 const db = low(adapter);
 
 db.defaults({ histoires: [],  xp: []}).write()
 
 var prefix = ("sigbot!")
+var randnum = 0;
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
@@ -51,17 +53,39 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
-if (message.content === "salut <@437179201284603904>"){
-    message.reply("Konichiwa :3");
-    console.log("une salutation a éter effectuer");
+if (message.content === "Salut <@437179201284603904>"){
+    random();
+    if (randnum == 1){
+        //metre fucking commande ici
 }
-if (message.content === "ça va <@437179201284603904>"){
-        message.reply("JUST MONIKA");
-        file: "https://cdn.discordapp.com/attachments/427521450866507777/439488487306297364/monika.chr"
+if (randnum == 2){
+    //metre fucking commande ici
 }
-if (message.content === "merci <@437179201284603904>"){
-    message.reply("c'est toujours un plaisir :D");
+if (randnum == 3){
+    //metre fucking commande ici
+}}
+if (message.content === "Ça va <@437179201284603904>"){
+    random();
+    if (randnum == 1){
+        //metre fucking commande ici
 }
+if (randnum == 2){
+    //metre fucking commande ici
+}
+if (randnum == 3){
+    //metre fucking commande ici
+}}
+if (message.content === "Merci <@437179201284603904>"){
+    random();
+    if (randnum == 1){
+        //metre fucking commande ici
+}
+if (randnum == 2){
+    //metre fucking commande ici
+}
+if (randnum == 3){
+    //metre fucking commande ici
+}}
 if(message.content === "Xarrin!nickel"){ //Xarrin
         message.channel.send("", {
         file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
@@ -201,15 +225,15 @@ if (message.content === "<@437179201284603904>" ){
 if (message.content === prefix + "help" ){  
 
     const embed = new Discord.RichEmbed()
-    .setTitle("commande pour le Sigbot")
+    .setTitle("Commande pour le Sigbot")
     .setColor(0x0086AE)
-    .setDescription("voici les commande que le bot peu faire :D")
-    .setFooter("pour plus d'info demander a son créateur :3")
-    .addField("commande qui devais etre drole",
-      "lui dire salut (avec une mention a la fin) \n lui demander si ça va (avec une mention a la fin) \n lui dire merci (avec une mention a la fin)")
+    .setDescription("Voici les commande que le bot peu faire :D")
+    .setFooter("Pour plus d'info demander a son créateur :3")
+    .addField("parler lui :D",
+      "Salut <@437179201284603904>\nÇa va <@437179201284603904> ?\nMerci <@437179201284603904>")
       .addField("commande special",
-      "sigbot!gif")
-      .addField("commande utile",
+      "sigbot!gif (mais qui ne sers a rien)")
+      .addField("commande ~~vraiment~~ utile",
       "sigbot!xp")
   
     message.channel.send({embed});
@@ -291,3 +315,9 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 }
 }
 )
+
+function random(min, max) {
+   min = Math.ceil(0)// 0 est impossible a avoir
+   max = Math.floor(3)
+   randnum = Math.floor(Math.random() * (max - min +1) + min);
+}
