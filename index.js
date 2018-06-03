@@ -64,6 +64,9 @@ if (message.content === "sigbot!gif"){
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
     });  
 }
+if (message.content === "sigbot!ServeurListe"){
+message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
+}
 if (message.content === "Salut <@437179201284603904>"){
     random();
     if (randnum == 1){
