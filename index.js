@@ -100,7 +100,7 @@ if (randnum == 4){
     console.log("UN 4 DANS LE RANDOM")  
   }
 }
-if (message.content === "teste"){
+if (message.content === "sigbot!ASDF Movie"){
     random();
     if (ASDF == 1){
         message.channel.send("", {
@@ -116,8 +116,8 @@ if (ASDF == 2){
         file: "http://gifimage.net/wp-content/uploads/2017/09/asdf-movie-gif-7.gif"
     })
 }   if (ASDF == 4){
-    message.channel.send("https://media.giphy.com/media/XKnvIs2ELq7du/giphy.gif", {
-        file: ""
+    message.channel.send("", {
+        file: "https://media.giphy.com/media/XKnvIs2ELq7du/giphy.gif"
     })
 }   if (ASDF == 5){
     message.channel.send("", {
@@ -291,7 +291,7 @@ if (message.content === prefix + "help" ){
     .addField("parler lui :D",
       "Salut <@437179201284603904>\nÇa va <@437179201284603904> ?\nMerci <@437179201284603904>")
       .addField("commande special",
-      "sigbot!gif (mais qui ne sers a rien)")
+      "sigbot!gif (mais qui ne sers a rien)\nsigbot!ASDF Movie (car c'est drole les ASDF Movie '^')")
       .addField("commande ~~vraiment~~ utile",
       "sigbot!xp")
   
