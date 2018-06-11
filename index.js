@@ -20,41 +20,6 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-bot.on("guildMemberAdd", member => {//sail of jsp
-    
-    member.guild.channels.find("name", "bienvenue-au-revoir").send(`${member} vien de POP de nul pars '^'`)
-        })
-        bot.on("guildMemberRemove", member => {
-        member.guild.channels.find("name", "bienvenue-au-revoir").send(`${member} a DEPOP :O`)
-        })//sail of jsp
-
-bot.on("guildMemberAdd", member => {//assasin
-    
-    member.guild.channels.find("name", "🕹cours-de-discord🕹").send(`${member} vien de POP de nul pars '^'`)
-        })
-        bot.on("guildMemberRemove", member => {
-        member.guild.channels.find("name", "🕹cours-de-discord🕹").send(`${member} a DEPOP :O`)
-        })//assasin
-
-bot.on("guildMemberAdd", member => {//eryh 
-    
-    member.guild.channels.find("name", "général").send(`${member} vien de POP de nul pars '^'`)
-        })
-        bot.on("guildMemberRemove", member => {
-        member.guild.channels.find("name", "général").send(`${member} a DEPOP :O`)
-        })//eryh 
-
-bot.on("guildMemberAdd", member => {//BH
-    
-member.guild.channels.find("name", "👑portail").send(`${member} vien de POP de nul pars '^'`)
-    })
-    bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "👑portail").send(`${member} a DEPOP :O`)
-    })
-    bot.on("guildMemberAdd", member => {
-        var role = member.guild.roles.find('name', 'new');
-    member.addRole(role)
-    })//BH
 bot.on('message', message => {
     var msgauthor = message.author.id;
 
@@ -135,6 +100,51 @@ if (randnum == 4){
     console.log("UN 4 DANS LE RANDOM")  
   }
 }
+if (message.content === "teste"){
+    random();
+    if (ASDF == 1){
+        message.channel.send("", {
+            file: "https://media1.tenor.com/images/1e5ea63a7ff58de29efd66799e10bf9a/tenor.gif"
+        })
+}
+if (ASDF == 2){
+    message.channel.send("", {
+        file: "http://garfie.g.a.pic.centerblog.net/b290ac08.gif"
+    })
+}   if (ASDF == 3){
+    message.channel.send("", {
+        file: "http://gifimage.net/wp-content/uploads/2017/09/asdf-movie-gif-7.gif"
+    })
+}   if (ASDF == 4){
+    message.channel.send("https://media.giphy.com/media/XKnvIs2ELq7du/giphy.gif", {
+        file: ""
+    })
+}   if (ASDF == 5){
+    message.channel.send("", {
+        file: "https://media1.tenor.com/images/b5c745a817f0ef09a827bb48d83526be/tenor.gif"
+    })
+}   if (ASDF == 6){
+    message.channel.send("", {
+        file: "https://vignette.wikia.nocookie.net/asdfmovie/images/7/73/You_Know_Who%27s_Gay%3F.gif/revision/latest?cb=20140307001053"
+    })
+}   if (ASDF == 7){
+    message.channel.send("", {
+        file: "https://i.imgur.com/5cL1Ld6.gif"
+    })
+}   if (ASDF == 8){
+    message.channel.send("", {
+        file: "https://i.pinimg.com/originals/6a/85/dd/6a85dd96d535832c22d5d5d34620615c.gif"
+    })
+}   if (ASDF == 9){
+    message.channel.send("", {
+        file: "https://i.pinimg.com/originals/c8/e2/29/c8e22909763d09c9ff31924ca150ac27.gif"
+    })
+}   if (ASDF == 10){
+    message.channel.send("", {
+        file: "https://i.imgur.com/P7BBAXh.gif"
+    })
+}}
+
 if(message.content === "Xarrin!nickel"){ //Xarrin
         message.channel.send("", {
         file: "https://media1.tenor.com/images/996279409bcab56de0f7fce3d135a84c/tenor.gif"
@@ -370,3 +380,8 @@ function random(min, max) {
    max = Math.floor(3)
    randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
+function random(min, max) {
+    min = Math.ceil(0)// 0 est impossible a avoir
+    max = Math.floor(10)
+    ASDF = Math.floor(Math.random() * (max - min +1) + min);
+ }
