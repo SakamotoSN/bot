@@ -12,7 +12,7 @@ db.defaults({ histoires: [],  xp: []}).write()
 var prefix = ("k!")
 
 bot.on('ready', function() {
-    bot.user.setUsername("@Créature 👹)")
+    bot.user.setUsername("@Créature 👹")
     bot.user.setPresence({ game: { name: 'tuer des monstres'}, status: 'online'}) //en ligne;
     console.log("Connected")
 });
@@ -41,6 +41,7 @@ db.get("xp").push({user: msgauthor, xp: 1}).write();
         .setThumbnail(message.author.avatarURL)
         .addField ("Monstres Tués :",`${xpfinal[1]}`)
         .setFooter("Konosuba ©")
+        .setThumbnail(message.author.avatarURL)
         message.channel.send({embed: xp_embed});
     }
 }
