@@ -41,7 +41,6 @@ db.get("xp").push({user: msgauthor, xp: 1}).write();
         .setThumbnail(message.author.avatarURL)
         .addField ("Monstres Tués :",`${xpfinal[1]}`)
         .setFooter("Konosuba ©")
-        .setThumbnail(message.author.avatarURL)
         message.channel.send({embed: xp_embed});
     }
 }
