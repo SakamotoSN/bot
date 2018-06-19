@@ -27,6 +27,7 @@ if(message.content == "guess-number start"){
     message.reply("partie lancé")
     party_launch = true;
     number_random = Math.floor(Math.random() * (5000 - 0) + 0)
+    console.log(number_random);
 }
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
@@ -50,10 +51,6 @@ if(message.content == "guess-number stop"){
     message.reply("aucune partie en cours")
 }
 }
-
-
-
-
     var msgauthor = message.author.id;
 
     if(message.author.bot)return;
