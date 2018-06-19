@@ -10,8 +10,10 @@ const db = low(adapter);
 
 db.defaults({ histoires: [],  xp: []}).write()
 
+var number_random = 0;
 var prefix = ("sigbot!")
 var randnum = 0;
+var party_launch = false;
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
@@ -21,6 +23,37 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
+if(message.content == "guess-number start"){
+    message.reply("partie lancé")
+    party_launch = true;
+    number_random = Math.floor(Math.random() * (5000 - 0) + 0)
+}
+if(party_launch && message.content !=null){
+    if(Number.isInteger(parseInt(message.content))){
+        if(message.content > number_random){
+            message.reply("plus petit")
+        }
+        else if(message.content < number_random){
+            message.reply("plus grand")
+        }
+        else{
+            message.reply('a gagné la partie');
+            party_launch = false
+        }
+    }
+}
+if(message.content == "guess-number stop"){
+    if(party_launch == true){
+        message.reply("party stoppé")
+        party_launch = false;
+}else{
+    message.reply("aucune partie en cours")
+}
+}
+
+
+
+
     var msgauthor = message.author.id;
 
     if(message.author.bot)return;
@@ -122,8 +155,8 @@ if (ASDF == 2){
 }   if (ASDF == 5){
     message.channel.send("", {
         file: "https://media1.tenor.com/images/b5c745a817f0ef09a827bb48d83526be/tenor.gif"
-    })
-}   if (ASDF == 6){
+    })}  
+     if (ASDF == 6){
     message.channel.send("", {
         file: "https://vignette.wikia.nocookie.net/asdfmovie/images/7/73/You_Know_Who%27s_Gay%3F.gif/revision/latest?cb=20140307001053"
     })
