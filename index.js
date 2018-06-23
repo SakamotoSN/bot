@@ -405,7 +405,7 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 
     message.channel.send({embed});
 }
-if(message.content === "sigbot!dit"){
+if(message.content === "teste"){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
     message.channel.send(`${thingToEcho}`);
