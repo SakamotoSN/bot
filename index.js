@@ -405,15 +405,16 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 
     message.channel.send({embed});
 }
-if(message.content === "sigbot!dit"){
+if (message.content.startsWith("sigbot!teste")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
-   var embed = new Discord.RichEmbed()
-    .addField("${message.author.username} M'a dit de vous dire :", thingToEcho)
-    .setColor(0x0086AE)
+    var embed = new Discord.RichEmbed()
+    .setDescription(`**${message.author.username}** Demande votre attention !`)
+    .addField("[Important, Annonce]", thingToEcho)
+    .setColor(0xD4FE00)
     .setFooter("si vous avez un problème... index.js ne répond pas")
-    message.channel.send(embed);
-} 
+    message.channel.send(embed)
+}
 }
 )
 
