@@ -410,11 +410,11 @@ if (message.content.startsWith("sigbot!dit")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
     message.channel.send(`${thingToEcho}`)
-}
 }else{
     message.channel.send(`il y a un probleme`,{
         file:"http://1.bp.blogspot.com/-45wb-emSlEM/TggFAb-44hI/AAAAAAAAAhg/DaXtkwQg6O8/s1600/freak+out.jpg"
     })} 
+}
 }
 )
 
