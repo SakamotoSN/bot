@@ -405,6 +405,11 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 
     message.channel.send({embed});
 }
+if(message.content === "<@437179201284603904> dit"){
+    let args = message.content.split(" ").slice(1)
+    let thingToEcho = args.join(" ")
+    message.channel.send(`${thingToEcho}`);
+}
 }
 )
 
