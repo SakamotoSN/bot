@@ -85,54 +85,6 @@ if (message.content === "sigbot!gif"){
 if (message.content === "sigbot!ServeurListe"){
 message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
 }
-if (message.content === "<@437179201284603904> say yes"){
-    message.channel.send(`yes`);
-}
-if (message.content === "Salut <@437179201284603904>"){
-    random();
-    if (randnum == 1){
-     message.channel.send(`Selama Pagi ${message.author.username}`);
-}
-if (randnum == 2){
-    message.channel.send(`Konichiwa ${message.author.username}`);
-}
-if (randnum == 3){
-    message.channel.send(`Hi ${message.author.username}`);
-}
-if (randnum == 4){
-    console.log("UN 4 DANS LE RANDOM")  
-  }
-}
-if (message.content === "Ça va <@437179201284603904> ?"){
-    random();
-    if (randnum == 1){
-        message.channel.send("Ça va :D\nje suis actuellement avec mon dev :3");
-}
-if (randnum == 2){
-    message.channel.send("Pas au top\nmon dev c'est encore planter sur une commande T^T");
-}
-if (randnum == 3){
-    message.channel.send("Pas trop\ntoute ces mise a jour pour les teste me rende un peu fatiguer :/");
-}
-if (randnum == 4){
-    console.log("UN 4 DANS LE RANDOM")  
-  }
-}
-if (message.content === "Merci <@437179201284603904>"){
-    random();
-    if (randnum == 1){
-        message.channel.send("Pas de quoi :D");
-}
-if (randnum == 2){
-    message.channel.send("C'est un honneur");
-}
-if (randnum == 3){
-    message.channel.send("Tout le plaisir et pour moi :3");
-}
-if (randnum == 4){
-    console.log("UN 4 DANS LE RANDOM")  
-  }
-}
 if (message.content === "sigbot!ASDF Movie"){
     random();
     if (ASDF == 1){
@@ -322,9 +274,9 @@ if (message.content === prefix + "help" ){
     .setDescription("Voici les commande que le bot peu faire :D")
     .setFooter("Pour plus d'info demander a son créateur :3")
     .addField("parler lui :D",
-      "Salut <@437179201284603904>\nÇa va <@437179201284603904> ?\nMerci <@437179201284603904>")
+      "(si vous ete chanceux il vous parlera si son créateur est pas loin)")
       .addField("commande special",
-      "sigbot!gif (mais qui ne sers a rien)\nsigbot!ASDF Movie (car c'est drole les ASDF Movie '^')")
+      "sigbot!ASDF Movie (car c'est drole les ASDF Movie '^')")
       .addField("commande ~~vraiment~~ utile",
       "sigbot!xp")
   
