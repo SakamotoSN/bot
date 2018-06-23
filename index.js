@@ -408,8 +408,12 @@ if(message.content === "sakamoto!help"){ //sakamoto help
 if(message.content === "sigbot!dit"){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
-    message.channel.send(`${thingToEcho}`);
-}
+   var embed = new Discord.RichEmbed()
+    .addField("${message.author.username} M'a dit de vous dire :", thingToEcho)
+    .setColor(0x0086AE)
+    .setFooter("si vous avez un problème... index.js ne répond pas")
+    message.channel.send(embed);
+} 
 }
 )
 
