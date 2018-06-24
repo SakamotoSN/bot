@@ -347,7 +347,12 @@ if (message.content.startsWith("sigbot!dit")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
     message.delete();
-    message.channel.send(`${thingToEcho}`)  }
+    message.channel.send(`${thingToEcho}`)  
+}else{
+    message.delete();
+    message.channel.send(`NON`)
+    message.delete();
+}
 }
 }
 )
