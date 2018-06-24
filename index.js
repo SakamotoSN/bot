@@ -350,8 +350,7 @@ if (message.content.startsWith("sigbot!dit")){
     message.channel.send(`${thingToEcho}`)  
 }else{
     message.delete();
-    message.channel.send(`NON`)
-    message.delete();
+message.channel.send(`NON ${message.author.username}`) 
 }
 }
 }
