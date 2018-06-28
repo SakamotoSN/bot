@@ -343,13 +343,13 @@ if(message.content === "sakamoto!help"){ //sakamoto help
     message.channel.send({embed});
 }
 if (message.content.startsWith("sigbot!dit")){
-    if("".includes(message.author.id)){
+    if("323807479651631104".includes(message.author.id)){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
     message.delete();
     message.channel.send(`${thingToEcho}`)  
 }else{
-    message.delete();
+    message.delete(message.author);
 }
 }
 }
