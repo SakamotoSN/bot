@@ -27,10 +27,10 @@ if(message.content == "G-N start"){
         message.channel.send(`une manche est deja en cours ${message.author}`)
     }else{
 
-   let rand = function random(min, max) {
+    function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
-        random = Math.floor(Math.random() * (max - min +1) + min);
+        rand = Math.floor(Math.random() * (max - min +1) + min);
      }
 random();
 
