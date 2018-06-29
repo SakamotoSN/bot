@@ -22,7 +22,7 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-if(message.content == "G-S start"){
+if(message.content == "G-N start"){
     function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
@@ -31,22 +31,19 @@ if(message.content == "G-S start"){
 random();
 
     if (random == 1){
-        console.log("1")
-        message.channel.send("cette party sera entre 0 est 5000")
+        message.channel.send(":arrow_forward: cette manche sera entre 0 est 5000 :arrow_forward: ")
         
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
 if (random == 2){
-    console.log("2")
-    message.channel.send("cette party sera entre 0 est 10000")
+    message.channel.send(":arrow_forward: cette manche sera entre 0 est 20000 :arrow_forward: ")
     
-    number_random = Math.floor(Math.random() * (10000 - 0) + 0)
+    number_random = Math.floor(Math.random() * (20000 - 0) + 0)
     console.log(number_random);
 }
 if (random == 3){
-    console.log("3")
-    message.channel.send("cette party sera entre 0 est 100000")
+    message.channel.send(":arrow_forward: cette manche sera entre 0 est 100000 :arrow_forward: ")
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
 }
@@ -55,23 +52,51 @@ party_launch = true;
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
         if(message.content > number_random){
-            message.reply("plus petit")
+            message.reply(":arrow_down: plus petit :arrow_down: ")
         }
         else if(message.content < number_random){
-            message.reply("plus grand")
+            message.reply(":arrow_up: plus grand :arrow_up: ")
         }
         else{
-            message.reply('a gagné la partie');
+            function random(min, max) {
+                min = Math.ceil(0)
+                max = Math.floor(3)
+                random = Math.floor(Math.random() * (max - min +1) + min);
+             }
+             random();
+             if (random == 1){
+            message.channel.send(`:ballot_box_with_check: ${message.author} > G-N :ballot_box_with_check:`);
+             }
+             if (random == 2){
+                message.channel.send(`:ballot_box_with_check: ${message.author} a gagner cette manche :ballot_box_with_check:`);
+                 }
+                 if (random == 3){
+                    message.channel.send(`:ballot_box_with_check: ${message.author} : 1 | G-N : 0 :ballot_box_with_check: `);
+                     }
             party_launch = false
         }
     }
 }
-if(message.content == "G-S stop"){
+if(message.content == "G-N stop"){
     if(party_launch == true){
-        message.reply("party stoppé")
+        function random(min, max) {
+            min = Math.ceil(0)
+            max = Math.floor(3)
+            random = Math.floor(Math.random() * (max - min +1) + min);
+         }
+         random();
+         if (random == 1){
+        message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
+         }
+         if (random == 2){
+            message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
+         }
+         if (random == 1){
+            message.channel.send(`:stop_button: GN : 1 | ${message.author} : 0 :stop_button: `)
+         }
         party_launch = false;
 }else{
-    message.reply("aucune partie en cours")
+    message.reply(`excuser moi ${message.author} mais je ne trouve pas de jeu G-N lancer :no_mouth: `)
 }
 }
     var msgauthor = message.author.id;
@@ -82,10 +107,8 @@ if(!db.get("xp").find({user : msgauthor}).value()){
     db.get("xp").push({user: msgauthor, xp: 1}).write();
     }else{
         var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
-        console.log(userxpdb);
         var userxp = Object.values(userxpdb)
-        console.log(userxp)
-        console.log(`nombre d'xp; ${userxp[1]}`)
+       
         
         db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
 
@@ -287,6 +310,8 @@ if (message.content === prefix + "help" ){
       "sigbot!ASDF Movie (car c'est drole les ASDF Movie '^')")
       .addField("commande ~~vraiment~~ utile",
       "sigbot!xp")
+      .addField("jeux",
+      "G-N start / stop (c'est un jeu ou vous devez deviner un nombre start pour le lancer et stop pour l'areter)")
   
     message.channel.send({embed});
 }
