@@ -27,26 +27,26 @@ if(message.content == "G-N start"){
         message.channel.send(`une manche est deja en cours ${message.author}`)
     }else{
 
-    function random(min, max) {
+   let rand = function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
         random = Math.floor(Math.random() * (max - min +1) + min);
      }
 random();
 
-    if (random == 1){
+    if (rand == 1){
         message.channel.send("cette manche sera entre 0 est 5000 :arrow_forward: ")
         
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
-if (random == 2){
+if (rand == 2){
     message.channel.send("cette manche sera entre 0 est 20000 :arrow_forward: ")
     
     number_random = Math.floor(Math.random() * (20000 - 0) + 0)
     console.log(number_random);
 }
-if (random == 3){
+if (rand == 3){
     message.channel.send("cette manche sera entre 0 est 100000 :arrow_forward: ")
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
