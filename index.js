@@ -12,7 +12,6 @@ db.defaults({ histoires: [],  xp: []}).write()
 
 var number_random = 0;
 var prefix = ("sigbot!")
-var randnum = 0;
 var party_launch = false;
 
 bot.on('ready', function() {
@@ -24,10 +23,26 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 if(message.content == "guess-number start"){
-    message.reply("partie lancé")
     party_launch = true;
-    number_random = Math.floor(Math.random() * (5000 - 0) + 0)
+    random();
+    if (random == 1){
+        message.channel.send("cette party sera entre 0 est 5000")
+        party_launch = true;
+        number_random = Math.floor(Math.random() * (5000 - 0) + 0)
+        console.log(number_random);
+}
+if (random == 2){
+    message.channel.send("cette party sera entre 0 est 10000")
+    party_launch = true;
+    number_random = Math.floor(Math.random() * (10000 - 0) + 0)
     console.log(number_random);
+}
+if (random == 3){
+    message.channel.send("cette party sera entre 0 est 100000")
+    party_launch = true;
+    number_random = Math.floor(Math.random() * (100000 - 0) + 0)
+    console.log(number_random);
+}
 }
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
@@ -364,4 +379,9 @@ function random(min, max) {
     min = Math.ceil(0)// 0 est impossible a avoir
     max = Math.floor(10)
     ASDF = Math.floor(Math.random() * (max - min +1) + min);
+ }
+ function random(min, max) {
+    min = Math.ceil(0)// 0 est impossible a avoir
+    max = Math.floor(3)
+    random = Math.floor(Math.random() * (max - min +1) + min);
  }
