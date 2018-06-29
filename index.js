@@ -96,8 +96,8 @@ if(message.content == "G-N stop"){
          if (stop == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
          }
-         if (stop == 1){
-            message.channel.send(`:stop_button: GN : 1 | ${message.author} : 0 :stop_button: `)
+         if (stop == 3){
+            message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
          }
         party_launch = false;
 }else{
