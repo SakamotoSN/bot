@@ -21,7 +21,7 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-bot.on('message', message => 
+bot.on('message', message => {
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
@@ -81,10 +81,6 @@ if(message.content == "G-N stop"){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
 
         party_launch = false;
-}else{
-    if(party_launch == false){
-    message.channel.send(`excuser moi ${message.author} mais je ne trouve pas de jeu G-N lancer :no_mouth: `)
-    }
 }
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
