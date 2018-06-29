@@ -21,17 +21,13 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
+
+
 bot.on('message', message => {
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
     }else{
-
-    function random(min, max) {
-        min = Math.ceil(0)
-        max = Math.floor(3)
-        random = Math.floor(Math.random() * (max - min +1) + min);
-     }
 random();
 
     if (random == 1){
@@ -101,7 +97,7 @@ if(message.content == "G-N stop"){
          }
         party_launch = false;
 }else{
- console.log("fail")
+ message.channel.send("aucune manche en cours")
 }
 }
     var msgauthor = message.author.id;
@@ -137,6 +133,11 @@ if (message.content === "sigbot!ServeurListe"){
 message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
 }
 if (message.content === "sigbot!ASDF Movie"){
+    function random(min, max) {
+        min = Math.ceil(0)// 0 est impossible a avoir
+        max = Math.floor(10)
+        ASDF = Math.floor(Math.random() * (max - min +1) + min);
+     }
     random();
     if (ASDF == 1){
         message.channel.send("", {
@@ -408,13 +409,3 @@ if (message.content.startsWith("sigbot!dit")){
 }
 )
 
-function random(min, max) {
-   min = Math.ceil(0)// 0 est impossible a avoir
-   max = Math.floor(3)
-   randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
-function random(min, max) {
-    min = Math.ceil(0)// 0 est impossible a avoir
-    max = Math.floor(10)
-    ASDF = Math.floor(Math.random() * (max - min +1) + min);
- }
