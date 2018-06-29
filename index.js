@@ -30,24 +30,24 @@ if(message.content == "G-N start"){
     function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
-        rand = Math.floor(Math.random() * (max - min +1) + min);
+        random = Math.floor(Math.random() * (max - min +1) + min);
      }
 random();
 
-    if (rand == 1){
-        message.channel.send("cette manche sera entre 0 est 5000 :arrow_forward: ")
+    if (random == 1){
+        message.channel.send(":arrow_forward: cette manche sera entre 0 est 5000 :arrow_forward: ")
         
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
-if (rand == 2){
-    message.channel.send("cette manche sera entre 0 est 20000 :arrow_forward: ")
+if (random == 2){
+    message.channel.send(":arrow_forward: cette manche sera entre 0 est 20000 :arrow_forward: ")
     
     number_random = Math.floor(Math.random() * (20000 - 0) + 0)
     console.log(number_random);
 }
-if (rand == 3){
-    message.channel.send("cette manche sera entre 0 est 100000 :arrow_forward: ")
+if (random == 3){
+    message.channel.send(":arrow_forward: cette manche sera entre 0 est 100000 :arrow_forward: ")
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
 }
@@ -57,10 +57,10 @@ party_launch = true;
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
         if(message.content > number_random){
-            message.channel.send(":arrow_down:")
+            message.channel.send(":arrow_down: plus petit :arrow_down: ")
         }
         else if(message.content < number_random){
-            message.channel.send(":arrow_up:")
+            message.channel.send(":arrow_up: plus grand :arrow_up: ")
         }
         else{
             function random(min, max) {
@@ -83,12 +83,51 @@ if(party_launch && message.content !=null){
     }
 }
 if(message.content == "G-N stop"){
+    if(party_launch == true){
+        function random(min, max) {
+            min = Math.ceil(0)
+            max = Math.floor(3)
+            stop = Math.floor(Math.random() * (max - min +1) + min);
+         }
+         random();
+         if (stop == 1){
+        message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
+         }
+         if (stop == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
-
+         }
+         if (stop == 3){
+            message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
+         }
         party_launch = false;
-}else
-console.log("fail")
+}else{
+ console.log("fail")
+}
+}
+    var msgauthor = message.author.id;
 
+    if(message.author.bot)return;
+
+if(!db.get("xp").find({user : msgauthor}).value()){
+    db.get("xp").push({user: msgauthor, xp: 1}).write();
+    }else{
+        var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
+        var userxp = Object.values(userxpdb)
+       
+        
+        db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
+
+        if(message.content === "sigbot!xp"){
+            var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
+            var xpfinal = Object.values(xp);
+            var xp_embed = new Discord.RichEmbed()
+            .setTitle(`Stat des XP de ${message.author.username}`)
+            .setColor('0xcc0099')
+            .setDescription("Affichage des XP")
+            .addField("XP:", `${xpfinal[1]} xp`)
+            .setFooter("enjoy")
+            message.channel.send({embed: xp_embed});
+        }}
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
@@ -378,9 +417,4 @@ function random(min, max) {
     min = Math.ceil(0)// 0 est impossible a avoir
     max = Math.floor(10)
     ASDF = Math.floor(Math.random() * (max - min +1) + min);
- }
- function random(min, max) {
-    min = Math.ceil(0)
-    max = Math.floor(3)
-    random = Math.floor(Math.random() * (max - min +1) + min);
  }
