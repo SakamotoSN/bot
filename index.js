@@ -26,18 +26,21 @@ if(message.content == "guess-number start"){
     party_launch = true;
     random();
     if (random == 1){
+        console.log("1")
         message.channel.send("cette party sera entre 0 est 5000")
         party_launch = true;
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
 if (random == 2){
+    console.log("2")
     message.channel.send("cette party sera entre 0 est 10000")
     party_launch = true;
     number_random = Math.floor(Math.random() * (10000 - 0) + 0)
     console.log(number_random);
 }
 if (random == 3){
+    console.log("3")
     message.channel.send("cette party sera entre 0 est 100000")
     party_launch = true;
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
