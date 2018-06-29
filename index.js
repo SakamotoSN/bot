@@ -23,6 +23,9 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 if(message.content == "G-N start"){
+    if(party_launch == true){
+        message.channel.send(`une manche est deja en cours ${message.author}`)
+    }else
     function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
@@ -52,10 +55,10 @@ party_launch = true;
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
         if(message.content > number_random){
-            message.reply(":arrow_down: plus petit :arrow_down: ")
+            message.channel.send(":arrow_down: plus petit :arrow_down: ")
         }
         else if(message.content < number_random){
-            message.reply(":arrow_up: plus grand :arrow_up: ")
+            message.channel.send(":arrow_up: plus grand :arrow_up: ")
         }
         else{
             function random(min, max) {
@@ -96,7 +99,7 @@ if(message.content == "G-N stop"){
          }
         party_launch = false;
 }else{
-    message.reply(`excuser moi ${message.author} mais je ne trouve pas de jeu G-N lancer :no_mouth: `)
+    message.channel.send(`excuser moi ${message.author} mais je ne trouve pas de jeu G-N lancer :no_mouth: `)
 }
 }
     var msgauthor = message.author.id;
