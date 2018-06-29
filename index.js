@@ -24,7 +24,11 @@ bot.login(process.env.TOKEN);
 bot.on('message', message => {
 if(message.content == "guess-number start"){
     party_launch = true;
-    random();
+    let random =  
+        min = Math.ceil(0)// 0 est impossible a avoir
+        max = Math.floor(3)
+        random = Math.floor(Math.random() * (max - min +1) + min);
+     random();
     if (random == 1){
         console.log("1")
         message.channel.send("cette party sera entre 0 est 5000")
@@ -382,9 +386,4 @@ function random(min, max) {
     min = Math.ceil(0)// 0 est impossible a avoir
     max = Math.floor(10)
     ASDF = Math.floor(Math.random() * (max - min +1) + min);
- }
- function random(min, max) {
-    min = Math.ceil(0)// 0 est impossible a avoir
-    max = Math.floor(3)
-    random = Math.floor(Math.random() * (max - min +1) + min);
  }
