@@ -22,7 +22,7 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-if(message.content == "guess-number start"){
+if(message.content == "G-S start"){
     function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
@@ -40,6 +40,7 @@ random();
 if (random == 2){
     console.log("2")
     message.channel.send("cette party sera entre 0 est 10000")
+    
     number_random = Math.floor(Math.random() * (10000 - 0) + 0)
     console.log(number_random);
 }
@@ -49,9 +50,7 @@ if (random == 3){
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
 }
-console.log("random fin OK")
 party_launch = true;
-console.log("finish")
 }
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
@@ -67,7 +66,7 @@ if(party_launch && message.content !=null){
         }
     }
 }
-if(message.content == "guess-number stop"){
+if(message.content == "G-S stop"){
     if(party_launch == true){
         message.reply("party stoppé")
         party_launch = false;
