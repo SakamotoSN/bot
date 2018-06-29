@@ -21,7 +21,7 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-bot.on('message', message => 
+bot.on('message', message => {
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
@@ -35,19 +35,19 @@ if(message.content == "G-N start"){
 random();
 
     if (random == 1){
-        message.channel.send(":arrow_forward: cette manche sera entre 0 est 5000 :arrow_forward: ")
+        message.channel.send("cette manche sera entre 0 est 5000 :arrow_forward: ")
         
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
 if (random == 2){
-    message.channel.send(":arrow_forward: cette manche sera entre 0 est 20000 :arrow_forward: ")
+    message.channel.send("cette manche sera entre 0 est 20000 :arrow_forward: ")
     
     number_random = Math.floor(Math.random() * (20000 - 0) + 0)
     console.log(number_random);
 }
 if (random == 3){
-    message.channel.send(":arrow_forward: cette manche sera entre 0 est 100000 :arrow_forward: ")
+    message.channel.send("cette manche sera entre 0 est 100000 :arrow_forward: ")
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
 }
@@ -57,10 +57,10 @@ party_launch = true;
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
         if(message.content > number_random){
-            message.channel.send(":arrow_down: plus petit :arrow_down: ")
+            message.channel.send(":arrow_down:")
         }
         else if(message.content < number_random){
-            message.channel.send(":arrow_up: plus grand :arrow_up: ")
+            message.channel.send(":arrow_up:")
         }
         else{
              random();
@@ -78,20 +78,13 @@ if(party_launch && message.content !=null){
     }
 }
 if(message.content == "G-N stop"){
-
-         random();
-         if (random == 1){
-        message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
-         }
-         if (random == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
-         }
-         if (random == 3){
-            message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
-         }
+
         party_launch = false;
 }else{
+    if(party_launch == false){
     message.channel.send(`excuser moi ${message.author} mais je ne trouve pas de jeu G-N lancer :no_mouth: `)
+    }
 }
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
