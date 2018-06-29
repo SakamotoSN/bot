@@ -80,19 +80,19 @@ if(party_launch && message.content !=null){
 }
 if(message.content == "G-N stop"){
     if(party_launch == true){
-        function random(min, max) {
+         function random(min, max) {
             min = Math.ceil(0)
             max = Math.floor(3)
-            stop = Math.floor(Math.random() * (max - min +1) + min);
+            aretd = Math.floor(Math.random() * (max - min +1) + min);
          }
          random();
-         if (stop == 1){
+         if (aretd == 1){
         message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
          }
-         if (stop == 2){
+         if (aretd == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
          }
-         if (stop == 3){
+         if (sared == 3){
             message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
          }
         party_launch = false;
