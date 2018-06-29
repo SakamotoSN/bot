@@ -21,7 +21,7 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-bot.on('message', message => {
+bot.on('message', message => 
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
