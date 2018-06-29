@@ -63,11 +63,6 @@ if(party_launch && message.content !=null){
             message.channel.send(":arrow_up: plus grand :arrow_up: ")
         }
         else{
-            function random(min, max) {
-                min = Math.ceil(0)
-                max = Math.floor(3)
-                random = Math.floor(Math.random() * (max - min +1) + min);
-             }
              random();
              if (random == 1){
             message.channel.send(`:ballot_box_with_check: ${message.author} > G-N :ballot_box_with_check:`);
@@ -83,51 +78,21 @@ if(party_launch && message.content !=null){
     }
 }
 if(message.content == "G-N stop"){
-    if(party_launch == true){
-        function random(min, max) {
-            min = Math.ceil(0)
-            max = Math.floor(3)
-            stop = Math.floor(Math.random() * (max - min +1) + min);
-         }
+
          random();
-         if (stop == 1){
+         if (random == 1){
         message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
          }
-         if (stop == 2){
+         if (random == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
          }
-         if (stop == 3){
+         if (random == 3){
             message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
          }
         party_launch = false;
 }else{
     message.channel.send(`excuser moi ${message.author} mais je ne trouve pas de jeu G-N lancer :no_mouth: `)
 }
-}
-    var msgauthor = message.author.id;
-
-    if(message.author.bot)return;
-
-if(!db.get("xp").find({user : msgauthor}).value()){
-    db.get("xp").push({user: msgauthor, xp: 1}).write();
-    }else{
-        var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
-        var userxp = Object.values(userxpdb)
-       
-        
-        db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
-
-        if(message.content === "sigbot!xp"){
-            var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
-            var xpfinal = Object.values(xp);
-            var xp_embed = new Discord.RichEmbed()
-            .setTitle(`Stat des XP de ${message.author.username}`)
-            .setColor('0xcc0099')
-            .setDescription("Affichage des XP")
-            .addField("XP:", `${xpfinal[1]} xp`)
-            .setFooter("enjoy")
-            message.channel.send({embed: xp_embed});
-        }}
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
@@ -417,4 +382,9 @@ function random(min, max) {
     min = Math.ceil(0)// 0 est impossible a avoir
     max = Math.floor(10)
     ASDF = Math.floor(Math.random() * (max - min +1) + min);
+ }
+ function random(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+    random = Math.floor(Math.random() * (max - min +1) + min);
  }
