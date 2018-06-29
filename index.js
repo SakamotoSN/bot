@@ -23,33 +23,37 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 if(message.content == "guess-number start"){
+    console.log("teste 1 ok")
     party_launch = true;
     let random =  
         min = Math.ceil(0)// 0 est impossible a avoir
         max = Math.floor(3)
         random = Math.floor(Math.random() * (max - min +1) + min);
+        console.log("let ok")
      random();
+     console.log("random (); ok")
     if (random == 1){
         console.log("1")
         message.channel.send("cette party sera entre 0 est 5000")
-        party_launch = true;
+        
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
 if (random == 2){
     console.log("2")
     message.channel.send("cette party sera entre 0 est 10000")
-    party_launch = true;
     number_random = Math.floor(Math.random() * (10000 - 0) + 0)
     console.log(number_random);
 }
 if (random == 3){
     console.log("3")
     message.channel.send("cette party sera entre 0 est 100000")
-    party_launch = true;
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
 }
+console.log("random fin OK")
+party_launch = true;
+console.log("finish")
 }
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
