@@ -52,7 +52,7 @@ if (random == 3){
     console.log(number_random);
 }
 party_launch = true;
-    }
+}
 }
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
@@ -87,16 +87,16 @@ if(message.content == "G-N stop"){
         function random(min, max) {
             min = Math.ceil(0)
             max = Math.floor(3)
-            random = Math.floor(Math.random() * (max - min +1) + min);
+            stop = Math.floor(Math.random() * (max - min +1) + min);
          }
          random();
-         if (random == 1){
+         if (stop == 1){
         message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
          }
-         if (random == 2){
+         if (stop == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
          }
-         if (random == 1){
+         if (stop == 1){
             message.channel.send(`:stop_button: GN : 1 | ${message.author} : 0 :stop_button: `)
          }
         party_launch = false;
