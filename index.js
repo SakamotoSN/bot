@@ -23,15 +23,13 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 if(message.content == "guess-number start"){
-    console.log("teste 1 ok")
-    party_launch = true;
-    let random =  
-        min = Math.ceil(0)// 0 est impossible a avoir
+    function random(min, max) {
+        min = Math.ceil(0)
         max = Math.floor(3)
         random = Math.floor(Math.random() * (max - min +1) + min);
-        console.log("let ok")
-     random();
-     console.log("random (); ok")
+     }
+random();
+
     if (random == 1){
         console.log("1")
         message.channel.send("cette party sera entre 0 est 5000")
