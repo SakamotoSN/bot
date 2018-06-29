@@ -25,7 +25,8 @@ bot.on('message', message => {
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
-    }else
+    }else{
+
     function random(min, max) {
         min = Math.ceil(0)
         max = Math.floor(3)
@@ -51,6 +52,7 @@ if (random == 3){
     console.log(number_random);
 }
 party_launch = true;
+    }
 }
 if(party_launch && message.content !=null){
     if(Number.isInteger(parseInt(message.content))){
