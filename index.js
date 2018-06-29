@@ -63,6 +63,11 @@ if(party_launch && message.content !=null){
             message.channel.send(":arrow_up:")
         }
         else{
+            function random(min, max) {
+                min = Math.ceil(0)
+                max = Math.floor(3)
+                random = Math.floor(Math.random() * (max - min +1) + min);
+             }
              random();
              if (random == 1){
             message.channel.send(`:ballot_box_with_check: ${message.author} > G-N :ballot_box_with_check:`);
@@ -81,7 +86,9 @@ if(message.content == "G-N stop"){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
 
         party_launch = false;
-}
+}else
+console.log("fail")
+
 if (message.content === "sigbot!gif"){
     message.channel.send("on ce met au image et au gif maintenant \n alors preparais vous car on a atein une nouvelle aire de jeux", {
         file: "https://media.giphy.com/media/LOtqITm3tFmiA/giphy.gif" 
