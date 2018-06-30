@@ -375,7 +375,7 @@ if (message.content.startsWith("sigbot!dit")){
     message.delete();
     message.channel.send(`${thingToEcho}`)  
 }else{
-    message.delete(message.author);
+    message.delete();
 }
 }
 }
@@ -384,10 +384,5 @@ function aléa1(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
     alé1 = Math.floor(Math.random() * (max - min +1) + min);
- }
- function aléa2(min, max) {
-    min = Math.ceil(0)
-    max = Math.floor(3)
-    alé2 = Math.floor(Math.random() * (max - min +1) + min);
  }
  
