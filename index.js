@@ -64,7 +64,7 @@ if(party_launch && message.content !=null){
                 max = Math.floor(3)
                 random = Math.floor(Math.random() * (max - min +1) + min);
              }
-             random();
+             aléa();
              if (random == 1){
             message.channel.send(`:ballot_box_with_check: ${message.author} > G-N :ballot_box_with_check:`);
              }
@@ -80,11 +80,6 @@ if(party_launch && message.content !=null){
 }
 if(message.content == "G-N stop"){
     if(party_launch == true){
-         function random(min, max) {
-            min = Math.ceil(0)
-            max = Math.floor(3)
-            aretd = Math.floor(Math.random() * (max - min +1) + min);
-         }
          random();
          if (aretd == 1){
         message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
@@ -408,4 +403,8 @@ if (message.content.startsWith("sigbot!dit")){
 }
 }
 )
-
+function aléa(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+    aretd = Math.floor(Math.random() * (max - min +1) + min);
+ }
