@@ -59,21 +59,7 @@ if(party_launch && message.content !=null){
             message.channel.send(":arrow_up: plus grand :arrow_up: ")
         }
         else{
-            function random(min, max) {
-                min = Math.ceil(0)
-                max = Math.floor(3)
-                random = Math.floor(Math.random() * (max - min +1) + min);
-             }
-             aléa2();
-             if (alé2 == 1){
-            message.channel.send(`:ballot_box_with_check: ${message.author} > G-N :ballot_box_with_check:`);
-             }
-             if (alé2== 2){
                 message.channel.send(`:ballot_box_with_check: ${message.author} a gagner cette manche :ballot_box_with_check:`);
-                 }
-                 if (alé2 == 3){
-                    message.channel.send(`:ballot_box_with_check: ${message.author} : 1 | G-N : 0 :ballot_box_with_check: `);
-                     }
             party_launch = false
         }
     }
