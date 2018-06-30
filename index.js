@@ -28,21 +28,21 @@ if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
     }else{
-random();
+aléa1();
 
-    if (random == 1){
+    if (alé1 == 1){
         message.channel.send(":arrow_forward: cette manche sera entre 0 est 5000 :arrow_forward: ")
         
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
 }
-if (random == 2){
+if (alé1 == 2){
     message.channel.send(":arrow_forward: cette manche sera entre 0 est 20000 :arrow_forward: ")
     
     number_random = Math.floor(Math.random() * (20000 - 0) + 0)
     console.log(number_random);
 }
-if (random == 3){
+if (alé1== 3){
     message.channel.send(":arrow_forward: cette manche sera entre 0 est 100000 :arrow_forward: ")
     number_random = Math.floor(Math.random() * (100000 - 0) + 0)
     console.log(number_random);
@@ -64,14 +64,14 @@ if(party_launch && message.content !=null){
                 max = Math.floor(3)
                 random = Math.floor(Math.random() * (max - min +1) + min);
              }
-             aléa();
-             if (random == 1){
+             aléa2();
+             if (alé2 == 1){
             message.channel.send(`:ballot_box_with_check: ${message.author} > G-N :ballot_box_with_check:`);
              }
-             if (random == 2){
+             if (alé2== 2){
                 message.channel.send(`:ballot_box_with_check: ${message.author} a gagner cette manche :ballot_box_with_check:`);
                  }
-                 if (random == 3){
+                 if (alé2 == 3){
                     message.channel.send(`:ballot_box_with_check: ${message.author} : 1 | G-N : 0 :ballot_box_with_check: `);
                      }
             party_launch = false
@@ -80,14 +80,14 @@ if(party_launch && message.content !=null){
 }
 if(message.content == "G-N stop"){
     if(party_launch == true){
-         random();
-         if (aretd == 1){
+         aléa3();
+         if (alé3 == 1){
         message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
          }
-         if (aretd == 2){
+         if (alé3 == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
          }
-         if (sared == 3){
+         if (alé3 == 3){
             message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
          }
         party_launch = false;
@@ -403,8 +403,18 @@ if (message.content.startsWith("sigbot!dit")){
 }
 }
 )
-function aléa(min, max) {
+function aléa1(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
-    aretd = Math.floor(Math.random() * (max - min +1) + min);
+    alé1 = Math.floor(Math.random() * (max - min +1) + min);
+ }
+ function aléa2(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+    alé2 = Math.floor(Math.random() * (max - min +1) + min);
+ }
+ function aléa3(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+    alé3 = Math.floor(Math.random() * (max - min +1) + min);
  }
