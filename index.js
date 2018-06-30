@@ -80,16 +80,7 @@ if(party_launch && message.content !=null){
 }
 if(message.content == "G-N stop"){
     if(party_launch == true){
-         aléa3();
-         if (alé3 == 1){
-        message.channel.send(`:stop_button: ${message.author} give up :stop_button: `)
-         }
-         if (alé3 == 2){
             message.channel.send(`:stop_button: ${message.author} a décider de stoper la manche :stop_button: `)
-         }
-         if (alé3 == 3){
-            message.channel.send(`:stop_button: G-N : 1 | ${message.author} : 0 :stop_button: `)
-         }
         party_launch = false;
 }else{
  message.channel.send("aucune manche en cours")
@@ -413,8 +404,4 @@ function aléa1(min, max) {
     max = Math.floor(3)
     alé2 = Math.floor(Math.random() * (max - min +1) + min);
  }
- function aléa3(min, max) {
-    min = Math.ceil(0)
-    max = Math.floor(3)
-    alé3 = Math.floor(Math.random() * (max - min +1) + min);
- }
+ 
