@@ -16,7 +16,7 @@ var party_launch = false;
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
-    bot.user.setPresence({
+    bot.user.setActivity({
         "cmd": "SET_ACTIVITY",
         "args": {
           "pid": 437179201284603904 ,  // Your application's process id - required field
@@ -49,7 +49,7 @@ if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
     }else{
-aléa1();
+alé1();
 
     if (alé1 == 1){
         message.channel.send(":arrow_forward: cette manche sera entre 0 est 5000 :arrow_forward: ")
