@@ -16,7 +16,28 @@ var party_launch = false;
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
-    bot.user.setPresence({ game: { name: 'faire des crepes pour niko'}, status: 'online'})
+    bot.user.setPresence({
+        "cmd": "SET_ACTIVITY",
+        "args": {
+          "pid": 437179201284603904 ,  // Your application's process id - required field
+          "activity": {
+            "state": "In a Group",
+            "details": "Competitive | In a Match",
+            "timestamps": {
+              "start": time(nullptr),
+              "end": time(nullptr) + ((60 * 5) + 23)
+            },
+            "assets": {
+              "large_image": "teste",
+              "large_text": "",
+              "small_image": "",
+              "small_text": ""
+            },
+            "instance": true
+          }
+        },
+        "nonce": "647d814a-4cf8-4fbb-948f-898abd24f55b"
+      })
     console.log("Connected")});
 
 bot.login(process.env.TOKEN);
