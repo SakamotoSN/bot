@@ -19,7 +19,7 @@ bot.on('ready', function() {
     bot.user.setActivity({
         "cmd": "SET_ACTIVITY",
         "args": {
-          "pid": 437179201284603904 ,  // Your application's process id - required field
+          "pid": "437179201284603904" ,  // Your application's process id - required field
           "activity": {
             "state": "In a Group",
             "details": "Competitive | In a Match",
