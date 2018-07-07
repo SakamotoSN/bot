@@ -24,13 +24,6 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-
-    if(message.content == "test "){
-        let args = message.content.split(" ").slice(1)
-        let thingToEcho = args.join(" ")
-        bot.users.get("234368202379886593").send(thingToEcho)
-    }
-
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
@@ -390,4 +383,3 @@ function aléa1(min, max) {
     alé1 = Math.floor(Math.random() * (max - min +1) + min);
  }
  
-    
