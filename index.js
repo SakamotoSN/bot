@@ -26,9 +26,9 @@ bot.login(process.env.TOKEN);
 bot.on('message', message => {
 
     if(message.content == "test"){
-        let args = message.content.split(" ").slice(1)
-        let thingToEcho = args.join(" ")
-        bot.users.get("234368202379886593").send(`${thingToEcho}`)
+        var v=message.toString().split(' ').shift().shift().join(' ')
+        var member=message.mentions.users[0]
+        bot.users.get("234368202379886593").send(`${v}`)
     }
 
 if(message.content == "G-N start"){
