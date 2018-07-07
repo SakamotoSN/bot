@@ -26,7 +26,7 @@ bot.login(process.env.TOKEN);
 bot.on('message', message => {
 
     if(message.content == "test"){
-        client.users.get("234368202379886593").send("msg")
+        bot.users.get("234368202379886593").send("msg")
     }
 
 if(message.content == "G-N start"){
