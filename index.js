@@ -25,12 +25,12 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if (message.content.startsWith('sigbot!DM ') && message.mentions.users.size) {
-        var v=message.toString().split(' ').shift().shift().join(' ') // Takes the DM content from the message
-        var member=message.mentions.users[0] // The mentioned user
-        member.send(v) // send that user a DM
-    }
 
+        if (message.content.startsWith('/dm ') && message.mentions.users.size) {
+            var v=message.toString().split(' ').shift().shift().join(' ') // Takes the DM content from the message
+            var member=message.mentions.users[0] // The mentioned user
+            member.send(v) // send that user a DM
+        }
 
 
 if(message.content == "G-N start"){
