@@ -25,10 +25,10 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if(message.content == "test!"){
+    if(message.content == "test!teste"){
         let args = message.content.split(" ").slice(1)
         let thingToEcho = args.join(" ")
-        client.users.get("234368202379886593").send(thingToEcho)
+        bot.users.get("234368202379886593").send(thingToEcho)
     }
 
 if(message.content == "G-N start"){
