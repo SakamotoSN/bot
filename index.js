@@ -25,14 +25,6 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-
-        if (message.content.startsWith('/dm ') && message.mentions.users.size) {
-            var v=message.toString().split(' ').shift().shift().join(' ') // Takes the DM content from the message
-            var member=message.mentions.users[0] // The mentioned user
-            member.send(v) // send that user a DM
-        }
-
-
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
