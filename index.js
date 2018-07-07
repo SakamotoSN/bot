@@ -18,6 +18,16 @@ bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
     bot.user.setPresence({ game: { name: 'faire des crepes pour niko'}, status: 'online'})
     console.log("Connected")});
+const TicTacToe = require("./tictactoe/Game.js");
+
+const bot = new Discord.Client();
+
+let tictactoe = new TicTacToe({
+    channel: "tictactoe",
+    use_custom_bot: true
+});
+
+tictactoe.bindToClient(bot);
 
 bot.login(process.env.TOKEN);
 
