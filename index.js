@@ -18,6 +18,7 @@ bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
     bot.user.setPresence({ game: { name: 'faire des crepes pour niko'}, status: 'online'})
     console.log("Connected")});
+    const Discord = require("discord.js");
 const TicTacToe = require("./tictactoe/Game.js");
 
 const bot = new Discord.Client();
