@@ -25,7 +25,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if(message.content == "test test"){
+    if(message.content == "test!"){
         let args = message.content.split(" ").slice(1)
         let thingToEcho = args.join(" ")
         bot.users.get("234368202379886593").send(`${thingToEcho}`)
