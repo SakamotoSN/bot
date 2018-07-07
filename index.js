@@ -13,6 +13,7 @@ db.defaults({ histoires: [],  xp: []}).write()
 var number_random = 0;
 var prefix = ("sigbot!")
 var party_launch = false;
+var some_user = 234368202379886593
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
@@ -24,6 +25,10 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+    if(message.content === "test5012"){
+        client.send_message(some_user, "content")
+}
+
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
