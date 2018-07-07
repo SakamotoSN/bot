@@ -25,6 +25,12 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
+    if(message.content == "test5120"){
+        let args = message.content.split(" ").slice(1)
+        let thingToEcho = args.join(" ")
+    client.users.get("234368202379886593").send(`${thingToEcho}`)
+    }
+
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
@@ -272,9 +278,6 @@ if(message.content === "Qui est Mokigrokaka ?"){
     message.channel.send("Cette salope ?", {
     file: "https://cdn.discordapp.com/attachments/292726526657429504/444879710430822400/Mokigrokaka.PNG"
 })
-}
-if (message.content === "<@437179201284603904>" ){ 
-//metre DM pour moi
 }
 if (message.content === prefix + "help" ){  
 
