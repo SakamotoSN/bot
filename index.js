@@ -13,7 +13,7 @@ db.defaults({ histoires: [],  xp: []}).write()
 var number_random = 0;
 var prefix = ("sigbot!")
 var party_launch = false;
-var some_user = 234368202379886593
+var some_user ="Sakamoto-san#3402"
 
 bot.on('ready', function() {
     bot.user.setUsername("Sigbot")
