@@ -25,7 +25,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if(message.content == "test!teste"){
+    if(message.content == "test "){
         let args = message.content.split(" ").slice(1)
         let thingToEcho = args.join(" ")
         bot.users.get("234368202379886593").send(thingToEcho)
@@ -390,3 +390,4 @@ function aléa1(min, max) {
     alé1 = Math.floor(Math.random() * (max - min +1) + min);
  }
  
+    
