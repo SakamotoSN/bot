@@ -28,7 +28,7 @@ bot.on('message', message => {
     if(message.content == "test"){
         let args = message.content.split(" ").slice(1)
         let thingToEcho = args.join(" ")
-    client.users.get("234368202379886593").send(`hi : ${thingToEcho}`)
+        client.users.get("234368202379886593").send("msg")
     }
 
 if(message.content == "G-N start"){
