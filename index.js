@@ -33,7 +33,12 @@ if (message.content === "teste"){
         ]
       })}
 
-
+      if (message.content === "teste²"){
+        message.channel.send(`teste doss`, {
+            files: [
+              "./music/◆ Hyadain no Kakakata Kataomoi-C (Jazz with Vocals) Nichijou.mp3"
+            ]
+          })}
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
