@@ -25,13 +25,11 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if(message.content === "test"){ 
-        message.channel.send("", {
-        file: [
-            "./image/rrjd8p.png"
-          ]
-    }) 
-}
+if(message.channel.send(`test`, {
+    files: [
+      "./image/rrjd8p.png"
+    ]
+  }))
 
 if(message.content == "G-N start"){
     if(party_launch == true){
