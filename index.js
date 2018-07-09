@@ -24,6 +24,13 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+
+
+    message.channel.send(`Test`, {
+        files: [
+          "bot/image/rrjd8p.png"
+        ]
+      })
 if(message.content == "G-N start"){
     if(party_launch == true){
         message.channel.send(`une manche est deja en cours ${message.author}`)
