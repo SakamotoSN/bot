@@ -36,7 +36,7 @@ if (message.content === "teste"){
       if (message.content === "teste²"){
         message.channel.send(`teste doss`, {
             files: [
-              "./music/◆ Hyadain no Kakakata Kataomoi-C (Jazz with Vocals) Nichijou.mp3"
+              "./music/nichijou.mp3"
             ]
           })}
 if(message.content == "G-N start"){
