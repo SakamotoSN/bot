@@ -28,7 +28,7 @@ bot.on('message', message => {
 
     message.channel.send(`Test`, {
         files: [
-          "bot/image/rrjd8p.png"
+          "./image/rrjd8p.png"
         ]
       })
 if(message.content == "G-N start"){
