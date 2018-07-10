@@ -29,9 +29,12 @@ bot.on('message', message => {
         let messageToSend = message.content.split(" ").slice(2).join(" ");
         let userToSend = message.mentions.users.first();
 
-        userToSend.send(messageToSend);
+        userToSend.send(`${message.author} vous a envoter un message!\n${messageToSend}`);
         message.delete();
         message.channel.send(`${message.author} , votre message a bien eter envoyer a **${message.mentions.users.first().username}** :D`)
+    }else{
+        message.delete();
+        message.channel.send(`desoler ${message.author} mais je ne peu pas le faire`)
     }
 
         
