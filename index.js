@@ -25,13 +25,13 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if(message.content.startsWith("sigbot!DM")) {
+    if(message.content.startsWith(prefix + "!DM")) {
         let messageToSend = message.content.split(" ").slice(2).join(" ");
         let userToSend = message.mentions.users.first();
 
         userToSend.send(messageToSend);
         message.delete();
-        message.channel.send(`${message.author} , votre message a bien eter envoyer a **${message.mentions.first().username}** :D`)
+        message.channel.send(`${message.author} , votre message a bien eter envoyer a **${message.mentions.users.first().username}** :D`)
     }
 
         
