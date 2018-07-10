@@ -30,6 +30,8 @@ bot.on('message', message => {
         let userToSend = message.mentions.users.first();
 
         userToSend.send(messageToSend);
+        message.delete();
+        message.channel.send(`${message.author} , votre message a bien eter envoyer a ${message.mentions.users.first()} :D`)
     }
 
         
