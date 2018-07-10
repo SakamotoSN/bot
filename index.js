@@ -25,7 +25,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-    if(message.content.startsWith(prefix + "!DM")) {
+    if(message.content.startsWith(prefix + "DM")) {
         let messageToSend = message.content.split(" ").slice(2).join(" ");
         let userToSend = message.mentions.users.first();
 
