@@ -32,7 +32,7 @@ bot.on('message', message => {
         userToSend.send(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
         message.delete();
         message.channel.send(`**${message.author}** , votre message a bien eter envoyer a **${message.mentions.users.first().username}** :D`)
-    }
+}
         
 if (message.content === "teste"){
     message.channel.send(`teste d'image :D`, {
