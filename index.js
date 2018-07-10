@@ -26,12 +26,20 @@ bot.login(process.env.TOKEN);
 bot.on('message', message => {
 
     if(message.content.startsWith(prefix + "DM")) {
+
+        if(message.mentions.users.first()){
+
         let messageToSend = message.content.split(" ").slice(2).join(" ");
         let userToSend = message.mentions.users.first();
 
         userToSend.send(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
         message.delete();
         message.channel.send(`**${message.author}** , votre message a bien eter envoyer a **${message.mentions.users.first().username}** :D`)
+}else{
+    message.delete();
+    message.channel.send(`erreur`)
+
+}
 }
         
 if (message.content === "teste"){
