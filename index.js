@@ -35,7 +35,7 @@ bot.on('message', message => {
         userToSend.send(`${message.author.username} vous a envoyer un message!\n${messageToSend}`);
         message.delete(`${message.author.username} vous a envoyer un message!\n${messageToSend}`);
         message.channel.send(`**${message.author}** , votre message a bien été envoyer a **${message.mentions.users.first().username}** :D`)
-        console.log(`un utilisateur a utiliser les DM :D \n${message.author.username} vous a envoyer un message!\n${messageToSend}`)
+        console.log(`un utilisateur a utiliser les DM :D \n${message.author.username} a envoyer un message a ${message.mentions.users.first().username}!\n${messageToSend}`)
 }else{
     message.delete();
     message.channel.send(`erreur`)
