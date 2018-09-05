@@ -32,10 +32,10 @@ bot.on('message', message => {
         let messageToSend = message.content.split(" ").slice(2).join(" ");
         let userToSend = message.mentions.users.first();
 
-        userToSend.send(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
-        message.delete(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
+        userToSend.send(`${message.author.username} vous a envoyer un message!\n${messageToSend}`);
+        message.delete(`${message.author.username} vous a envoyer un message!\n${messageToSend}`);
         message.channel.send(`**${message.author}** , votre message a bien été envoyer a **${message.mentions.users.first().username}** :D`)
-        console.log()
+        console.log(`un utilisateur a utiliser les DM :D \n${message.author.username} vous a envoyer un message!\n${messageToSend}`)
 }else{
     message.delete();
     message.channel.send(`erreur`)
