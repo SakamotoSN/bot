@@ -33,8 +33,9 @@ bot.on('message', message => {
         let userToSend = message.mentions.users.first();
 
         userToSend.send(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
-        message.delete();
+        message.delete(`${message.author.username} vous a envoter un message!\n${messageToSend}`);
         message.channel.send(`**${message.author}** , votre message a bien été envoyer a **${message.mentions.users.first().username}** :D`)
+        console.log()
 }else{
     message.delete();
     message.channel.send(`erreur`)
